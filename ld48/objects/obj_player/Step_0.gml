@@ -31,3 +31,8 @@ if keyboard_check(keyLeft) {
 if keyboard_check_pressed(keyFire) {
 	instance_create_layer(x ,y,"Instances",obj_bullet);
 }
+
+//tether hitbox
+if collision_line(x + 10, y, room_width / 2, 0, obj_enemy, false, true) {
+	instance_destroy();
+}
