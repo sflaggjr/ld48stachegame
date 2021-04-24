@@ -36,7 +36,7 @@ if collision_line(x + 10, y, room_width / 2, 0, obj_enemy, false, true) {
 }
 
 //determine player facing
-if mouse_x < x {
+if mouse_x <= x {
 	playerFacing = pFacing.left;
 }
 else {
