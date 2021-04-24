@@ -16,7 +16,7 @@ if keyboard_check_pressed(ord("P")) {
 	}
 }
 
-
+//Pause Game handling
 if global.gameState = gState.pause {
 	instance_deactivate_all(true);
 }
@@ -29,4 +29,8 @@ if keyboard_check_pressed(vk_enter) {
 		room_goto(rm_lvl1);
 	}
 	global.gameState = gState.play;
+}
+
+if global.gameState = gState.rest {
+	//Add code here
 }

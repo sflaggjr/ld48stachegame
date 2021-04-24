@@ -14,11 +14,11 @@ enum pFacing {
 playerState = pState.idle;
 playerFacing = pFacing.right;
 //Controls
-keyUp = vk_up;
-keyDown = vk_down;
-keyLeft = vk_left;
-keyRight = vk_right;
-keyFire = vk_space;
+keyUp = ord("W");
+keyDown = ord("S");
+keyLeft = ord("A");
+keyRight = ord("D");
+keyFire = mb_left;
 
 //Variable Definitions
 vSpd = 3;
