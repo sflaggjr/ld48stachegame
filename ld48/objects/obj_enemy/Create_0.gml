@@ -7,7 +7,9 @@ enum eStates {
 	right,
 	primed,
 	reset,
-	attack
+	attack,
+	invul
 	}
 //Variable Definition
 eHp = 1;
+enemyState = 0;

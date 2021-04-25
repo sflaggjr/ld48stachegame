@@ -73,15 +73,14 @@ if tetherState = tState.destroyed {
 	y += vSpd;
 	//Game over if tether is destroyed and you're lower than the room height
 	if y > room_height {
-	global.gameState = gState.gameEnd
+	global.gameState = gState.gameEnd;
+	instance_destroy();
 	}
 		
 }
 if global.hp <= 0 {
 	//playerState = pState.dead;
+	global.gameState = gState.gameEnd;
 	instance_destroy();
-	global.gameState = gState.gameEnd
 	alarm[2] = 60;
 }
-
-//make the character look like he's drifting
