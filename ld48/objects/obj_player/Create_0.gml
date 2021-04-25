@@ -21,7 +21,6 @@ enum pFacing {
 }
 //State Definitions
 playerState = pState.active;
-lastState = playerState;
 playerFacing = pFacing.right;
 tetherState = tState.active;
 //Controls

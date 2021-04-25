@@ -73,13 +73,14 @@ if tetherState = tState.destroyed {
 	y += vSpd;
 	//Game over if tether is destroyed and you're lower than the room height
 	if y > room_height {
-		alarm[2] = 60;
+	global.gameState = gState.gameEnd
 	}
 		
 }
 if global.hp <= 0 {
 	//playerState = pState.dead;
 	instance_destroy();
+	global.gameState = gState.gameEnd
 	alarm[2] = 60;
 }
 

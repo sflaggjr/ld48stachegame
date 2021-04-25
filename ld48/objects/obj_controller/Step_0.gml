@@ -1,14 +1,4 @@
-//close game if state = gameEnd
 if keyboard_check_pressed(vk_escape) {
-	global.gameState = gState.gameEnd;
-}
-
-if global.gameState = gState.gameEnd {
-	room_goto(rm_menu);
-	global.gameState = gState.menu;
-}
-
-if keyboard_check_pressed(ord("P")) {
 	if global.gameState == gState.play {
 		global.gameState = gState.pause;
 	}
@@ -25,12 +15,9 @@ else {
 	instance_activate_all();
 }
 //move to gameState.play
-if keyboard_check_pressed(vk_enter) {
-	if global.gameState != gState.play {
-		room_goto(rm_lvl1);
-	}
-	global.gameState = gState.play;
-}
+/*if global.gameState = gState.play {
+	room_goto(rm_lvl1);
+}*/
 
 if global.gameState = gState.rest {
 	if keyboard_check_pressed(ord("H")) {
