@@ -5,7 +5,12 @@ draw_self();
 }
 //Draw Tether
 if tetherState != tState.destroyed {
-	draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_white, c_white);
+	if tetherState == tState.active {
+		draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_white, c_white);
+	}
+	if tetherState = tState.invul {
+		draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_teal, c_teal);
+	}
 }
 else {
 	image_angle = 45;
