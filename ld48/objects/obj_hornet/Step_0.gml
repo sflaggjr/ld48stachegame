@@ -18,7 +18,7 @@ if enemyState = eStates.active {
 		alarm[1] = 30;
 	}
 	if y >= view_get_yport(view_yport[0]) {
-		y ++;
+		y = camera_get_view_y(view_camera[0]);
 	}
 }
 if place_meeting(x + spd, y, obj_wall){
