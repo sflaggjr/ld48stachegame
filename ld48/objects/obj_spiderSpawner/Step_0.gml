@@ -6,7 +6,7 @@ if place_meeting (x, y, obj_player) {
 }
 if triggered = true {
 	for (var i = 0; i <= spawnNumber; i += 1) {
-		instance_create_layer(x + random(500), spawnY, "Instances", obj_spider);
+		instance_create_layer(floor(random_range(spawnX1, spawnX2)), spawnY, "Instances", obj_spider);
 	}
 	instance_destroy();
 }

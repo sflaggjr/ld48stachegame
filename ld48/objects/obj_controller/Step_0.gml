@@ -35,9 +35,3 @@ var _vw = camera_get_view_width(view_camera[0]);
 var _vh = camera_get_view_height(view_camera[0]);
 instance_deactivate_all(true);
 instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
-
-//goto rest room
-if keyboard_check_pressed(vk_f1){ 
-	room_goto(rm_camp);
-	gameState = gState.rest;
-}

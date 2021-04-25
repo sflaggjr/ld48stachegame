@@ -4,8 +4,13 @@ mouseY = window_mouse_get_y();
 if global.gameState = gState.menu{
 	if buttonState == bState.hovered {
 		if mouse_check_button_pressed(mb_left) {
-			global.gameState = gState.play;
-			room_goto(rm_lvl1);
+			if button1 = 1 {
+				global.gameState = gState.play;
+				room_goto(rm_lvl1);
+			}
+			if button2 = 1 {
+				game_end();
+			}
 		}	
 	}
 }

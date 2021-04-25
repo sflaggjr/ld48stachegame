@@ -3,3 +3,5 @@
 spawnNumber = random(3);
 triggered = false;
 spawnY = 0;
+spawnX1 = 150;
+spawnX2 = 1200;
