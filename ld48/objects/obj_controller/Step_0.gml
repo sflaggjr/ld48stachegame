@@ -4,7 +4,8 @@ if keyboard_check_pressed(vk_escape) {
 }
 
 if global.gameState = gState.gameEnd {
-	game_end();
+	room_goto(rm_menu);
+	global.gameState = gState.menu;
 }
 
 if keyboard_check_pressed(ord("P")) {
@@ -32,7 +33,16 @@ if keyboard_check_pressed(vk_enter) {
 }
 
 if global.gameState = gState.rest {
-	//Add code here
+	if keyboard_check_pressed(ord("H")) {
+		global.hp = maxHP;
+		room_goto(rm_lvl1);
+		global.gameState = gState.play;
+	}
+	if keyboard_check_pressed(ord("T")) {
+		global.tether = maxHP;
+		room_goto(rm_lvl1);
+		global.gameState = gState.play;
+	}
 }
 //deactivate any instance that isn't in the camera view
 var _vx = camera_get_view_x(view_camera[0]);

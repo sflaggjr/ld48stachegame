@@ -1,18 +1,27 @@
 //Player States
 enum pState {
-	idle,
+	active,
 	dead,
 	hit,
+	invul,
 	descending,
-	ascending
+	ascending,
+	tetherDestroyed,
+	idle
+}
+enum tState {
+	active,
+	invul,
+	destroyed
 }
 enum pFacing {
 	left,
 	right
 }
 //State Definitions
-playerState = pState.idle;
+playerState = pState.active;
 playerFacing = pFacing.right;
+tetherState = tState.active;
 //Controls
 keyUp = ord("W");
 keyDown = ord("S");
@@ -23,7 +32,10 @@ keyFire = mb_left;
 //Variable Definitions
 vSpd = 3;
 hSpd = 10;
-hp = 10;
-tetherHp = 10;
 collisionOffset = 10;
+iframes = 60;
+firing = false;
+
+
+
 

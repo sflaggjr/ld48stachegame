@@ -11,11 +11,12 @@ else {
 	eSpd = 0;
 }
 
-
-if eSpd == 0 {
-	if canShoot {
-		instance_create_layer(x, y, "Instances", obj_enemyBullet)
-		canShoot = false;
-		alarm[0] = shotCooldown;
+if instance_exists(obj_player){
+	if eSpd == 0 {
+		if canShoot {
+			instance_create_layer(x, y, "Instances", obj_enemyBullet)
+			canShoot = false;
+			alarm[0] = shotCooldown;
+		}
 	}
 }
