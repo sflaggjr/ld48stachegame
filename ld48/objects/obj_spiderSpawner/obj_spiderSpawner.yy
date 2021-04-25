@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite19",
-    "path": "sprites/Sprite19/Sprite19.yy",
+    "name": "spr_spiderSpawner",
+    "path": "sprites/spr_spiderSpawner/spr_spiderSpawner.yy",
   },
   "solid": false,
   "visible": false,
