@@ -32,6 +32,7 @@
     {"id":{"name":"spr_conc_wall","path":"sprites/spr_conc_wall/spr_conc_wall.yy",},"order":11,},
     {"id":{"name":"NineSliceBoxStretched","path":"scripts/NineSliceBoxStretched/NineSliceBoxStretched.yy",},"order":1,},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"order":0,},
+    {"id":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"order":10,},
     {"id":{"name":"spr_enemyBullet","path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},"order":4,},
     {"id":{"name":"NewTextBox","path":"scripts/NewTextBox/NewTextBox.yy",},"order":4,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
