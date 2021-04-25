@@ -38,6 +38,7 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
     {"id":{"name":"spr_spiderSpawner","path":"sprites/spr_spiderSpawner/spr_spiderSpawner.yy",},"order":18,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":3,},
+    {"id":{"name":"spr_crosshair","path":"sprites/spr_crosshair/spr_crosshair.yy",},"order":19,},
     {"id":{"name":"spr_worm","path":"sprites/spr_worm/spr_worm.yy",},"order":8,},
     {"id":{"name":"obj_worm","path":"objects/obj_worm/obj_worm.yy",},"order":4,},
     {"id":{"name":"spr_landingPad","path":"sprites/spr_landingPad/spr_landingPad.yy",},"order":3,},
