@@ -78,7 +78,8 @@ if tetherState = tState.destroyed {
 		
 }
 if global.hp <= 0 {
-	playerState = pState.dead;
+	//playerState = pState.dead;
+	instance_destroy();
 	alarm[2] = 60;
 }
 

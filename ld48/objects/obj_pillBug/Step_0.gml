@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+if instance_exists(obj_player) {
 if y >= obj_player.y {
 	y -= eSpd;
 }
@@ -11,7 +11,7 @@ else {
 	eSpd = 0;
 }
 
-if instance_exists(obj_player){
+
 	if eSpd == 0 {
 		if canShoot {
 			instance_create_layer(x, y, "Instances", obj_enemyBullet)

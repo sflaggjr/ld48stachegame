@@ -35,7 +35,7 @@
     {"id":{"name":"obj_breakWall","path":"objects/obj_breakWall/obj_breakWall.yy",},"order":1,},
     {"id":{"name":"rm_camp","path":"rooms/rm_camp/rm_camp.yy",},"order":1,},
     {"id":{"name":"snd_playerShot","path":"sounds/snd_playerShot/snd_playerShot.yy",},"order":1,},
-    {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":13,},
+    {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":0,},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
     {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},"order":2,},
   ],
