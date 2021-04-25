@@ -7,7 +7,8 @@ enum pState {
 	descending,
 	ascending,
 	tetherDestroyed,
-	idle
+	idle,
+	locked
 }
 enum tState {
 	active,
@@ -20,6 +21,7 @@ enum pFacing {
 }
 //State Definitions
 playerState = pState.active;
+lastState = playerState;
 playerFacing = pFacing.right;
 tetherState = tState.active;
 //Controls
