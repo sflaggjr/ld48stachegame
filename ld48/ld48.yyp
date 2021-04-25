@@ -35,6 +35,7 @@
     {"id":{"name":"spr_enemyBullet","path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},"order":4,},
     {"id":{"name":"NewTextBox","path":"scripts/NewTextBox/NewTextBox.yy",},"order":4,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
+    {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},"order":15,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":3,},
     {"id":{"name":"spr_worm","path":"sprites/spr_worm/spr_worm.yy",},"order":8,},
     {"id":{"name":"obj_worm","path":"objects/obj_worm/obj_worm.yy",},"order":4,},

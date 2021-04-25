@@ -3,12 +3,12 @@
 
 // Inherit the parent event
 event_inherited();
-
 if enemyState = eStates.primed {
 	if y < targetY {
 		y += spd;
 	}
 	else {
+		spawnY = y;
 		alarm[0] = chargeTime;
 		enemyState = eStates.reset;
 	}
@@ -21,5 +21,10 @@ if instance_exists(obj_player){
 			canShoot = false;
 			alarm[1] = shotCooldown;
 		}
+		var updateY = camera_get_view_y(view_camera[0]);
+		offsetY = point_distance(x, spawnY, x, camera_get_view_y(view_camera[0]));
+		y =  updateY + offsetY;
 	}
 }
+
+
