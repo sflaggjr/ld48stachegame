@@ -15,4 +15,9 @@ global.targetX = -1;
 global.targetX = -1;
 global.hp = 5;
 global.tether = 5;
+global.uiFontSize = 2;
+
+global.textSpeed = 0.75;
 maxHP = 5;
+
+surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
