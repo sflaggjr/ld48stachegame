@@ -42,12 +42,10 @@ if collision_line(x + 10, y, room_width / 2, 0, obj_worm, false, true) && tether
 	tetherState = tState.invul;
 	alarm[1] = iframes;
 }
-if collision_line(x + 10, y, room_width / 2, 0, obj_spider, false, true) && tetherState == tState.active {
-	if obj_spider.enemyState = eStates.attack {
+if collision_line(x + 10, y, room_width / 2, 0, obj_tetherBullet, false, true) && tetherState == tState.active {
 		global.tether--;
 		tetherState = tState.invul;
 		alarm[1] = iframes;
-	}
 }
 //enemy bullet collision
 if place_meeting(x, y, obj_enemyBullet) && playerState == pState.active {

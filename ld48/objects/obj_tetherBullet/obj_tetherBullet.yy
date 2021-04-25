@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_tetherBullet",
+    "path": "sprites/spr_tetherBullet/spr_tetherBullet.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,16 +23,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_button",
+  "name": "obj_tetherBullet",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -5,7 +5,7 @@
 event_inherited();
 
 if enemyState = eStates.primed {
-	if y < targetY - 100 {
+	if y < targetY {
 		y += spd;
 	}
 	else {
@@ -16,9 +16,10 @@ if enemyState = eStates.primed {
 
 if instance_exists(obj_player){
 	if enemyState = eStates.active {
-		var targetX;
-		targetX = instance_nearest(x, y, obj_player);
-		
-
+		if canShoot = true {
+			instance_create_layer(x, y, "Instances", obj_tetherBullet);
+			canShoot = false;
+			alarm[1] = shotCooldown;
+		}
 	}
 }
