@@ -4,6 +4,7 @@ var xMargin = 10;
 var yMargin = 5;
 button1 = 0;
 button2 = 0;
+draw_text(mouseX, mouseY, "X: " + string(mouseX) + "Y: " + string(mouseY));
 
 if global.gameState = gState.menu {
 	var button1X = 480;

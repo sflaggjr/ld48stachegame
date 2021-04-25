@@ -1,6 +1,12 @@
 //capture mouse X/Y
-mouseX = window_mouse_get_x();
-mouseY = window_mouse_get_y();
+if !window_get_fullscreen() {
+	mouseX = window_mouse_get_x();
+	mouseY = window_mouse_get_y();
+}
+else {
+	mouseX = mouse_x;
+	mouseY = mouse_y;
+}
 if global.gameState = gState.menu{
 	if buttonState == bState.hovered {
 		if mouse_check_button_pressed(mb_left) {
