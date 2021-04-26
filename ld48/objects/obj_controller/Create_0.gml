@@ -5,7 +5,8 @@ enum gState {
 	menu,
 	startUp,
 	gameEnd,
-	rest
+	rest,
+	intro
 }
 
 global.gameState = gState.menu;
