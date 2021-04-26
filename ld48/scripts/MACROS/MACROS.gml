@@ -5,4 +5,5 @@ function MACROS(){
 	#macro CARDINAL_DIR round(direction/180)
 	#macro RESOLUTION_W 1366
 	#macro RESOLUTION_H 768
+	#macro SPACE_CONTINUE " \n \n [Press SPACE to Continue]"
 }
