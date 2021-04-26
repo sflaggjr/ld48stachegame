@@ -4,7 +4,6 @@ if (room == rm_lvl1) {
 	audio_sound_gain(snd_talking, 0, 1000);
 	audio_sound_gain(snd_theRim, 0, 100);
 	
-	show_debug_message("Playing ROOM LEVEL 1");
 	
 	//Kill the volume, then start the track, then raise the volume
 	audio_sound_gain(snd_level1, 0, 0);
@@ -18,8 +17,7 @@ if (room == rm_lvl1) {
 			audio_stop_sound(snd_level1);
 	}		
 	//Turn up volume of the main track
-	audio_sound_gain(snd_camp, 1, 10000);	
-	show_debug_message("Playing CAMP1")			
+	audio_sound_gain(snd_camp, 1, 10000);			
 	
 } else if (room == rm_lvl2) {
 	//Kill the previous tracks volume
@@ -30,8 +28,6 @@ if (room == rm_lvl1) {
 	if (audio_sound_get_gain(snd_level1) <= 0) { 
 			audio_stop_sound(snd_level1);
 	}		
-	
-	show_debug_message("Playing ROOM LEVEL 2");	
 	
 	//Kill the volume, then start the track, then raise the volume
 	audio_play_sound(snd_level1, 1000, true);
@@ -44,15 +40,16 @@ if (room == rm_lvl1) {
 			audio_stop_sound(snd_level1);
 	}		
 	//Turn up volume of the main track
-	audio_sound_gain(snd_camp, 1, 10000);	
-	show_debug_message("Playing CAMP2")			
+	audio_sound_gain(snd_camp, 1, 10000);			
 	
 } else if (room == rm_theRim) {
 	//Kill the previous tracks volume
 	audio_sound_gain(snd_camp, 0, 1000);
 	audio_sound_gain(snd_talking, 0, 1000);
-	
-	show_debug_message("Playing THE RIM");	
+	audio_sound_gain(snd_intro, 0, 1000);
+	if (audio_sound_get_gain(snd_intro) <= 0) { 
+			audio_stop_sound(snd_intro);
+	}	
 	
 	//Kill the volume, then start the track, then raise the volume
 	audio_sound_gain(snd_theRim, 0, 0);
@@ -68,8 +65,6 @@ if (room == rm_lvl1) {
 			audio_stop_sound(snd_level1);
 	}		
 	
-	show_debug_message("Playing ROOM LEVEL 3");	
-	
 	//Kill the volume, then start the track, then raise the volume
 	audio_play_sound(snd_level1, 1000, true);
 	audio_sound_gain(snd_level1, 1, 0000);
@@ -82,5 +77,15 @@ if (room == rm_lvl1) {
 	}		
 	//Turn up volume of the main track
 	audio_sound_gain(snd_camp, 1, 10000);	
-	show_debug_message("Playing CAMP3")			
+
+	
+} else if (room == rm_menu) {
+	//Kill the previous tracks volume
+	audio_stop_all();
+	//Kick off the camp music that stays on the background the whole game
+	audio_play_sound(snd_camp, 1000, true);
+	audio_sound_gain(snd_camp, 0, 0);
+	//Kill the volume, then start the track, then raise the volume	
+	audio_play_sound(snd_intro, 1000, true);
+	audio_sound_gain(snd_intro, 1, 1000);
 }
