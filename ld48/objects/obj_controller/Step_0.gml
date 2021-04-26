@@ -8,7 +8,7 @@ if keyboard_check_pressed(vk_escape) {
 }
 
 //Pause Game handling
-if global.gameState = gState.pause {
+if global.gameState == gState.pause {
 	instance_deactivate_all(true);
 }
 else {
@@ -16,16 +16,32 @@ else {
 }
 
 
-if global.gameState = gState.rest {
+if global.gameState == gState.rest {
 	if keyboard_check_pressed(ord("H")) {
 		global.hp = maxHP;
 		room_goto(rm_lvl1);
 		global.gameState = gState.play;
+		
+		audio_sound_gain(snd_camp, 0, 2000);
+		if (audio_sound_get_gain(snd_camp) <= 0) { 
+			audio_stop_sound(snd_camp);
+		}
+	
+		audio_play_sound(snd_level1, 1000, true);
+	
 	}
 	if keyboard_check_pressed(ord("T")) {
 		global.tether = maxHP;
 		room_goto(rm_lvl1);
 		global.gameState = gState.play;
+		
+		audio_sound_gain(snd_camp, 0, 2000);
+		if (audio_sound_get_gain(snd_camp) <= 0) { 
+			audio_stop_sound(snd_camp);
+		}
+	
+		audio_play_sound(snd_level1, 1000, true);		
+		
 	}
 }
 //deactivate any instance that isn't in the camera view

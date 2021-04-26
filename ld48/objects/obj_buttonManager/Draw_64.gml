@@ -6,7 +6,7 @@ button1 = 0;
 button2 = 0;
 draw_text(mouseX, mouseY, "X: " + string(mouseX) + "Y: " + string(mouseY));
 
-if global.gameState = gState.menu {
+if global.gameState == gState.menu {
 	var button1X = 480;
 	var button1Y = 680;
 	var button2X = 800;
@@ -39,7 +39,7 @@ if global.gameState = gState.menu {
 	draw_text(x1_b2 + xMargin, y1_b2 + yMargin, "Quit");
 }
 
-if global.gameState = gState.rest {
+if global.gameState == gState.rest {
 	var button1X = 250;
 	var button1Y = viewY;
 	var button2X = 450;

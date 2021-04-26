@@ -26,7 +26,9 @@ if (global.gameState == gState.play && !audio_is_playing(snd_level1)) {
 	
 	audio_play_sound(snd_level1, 1000, true);
 	
-} else if (global.gameState == gState.rest && !audio_is_playing(snd_camp)) {
+}
+
+if (global.gameState == gState.rest && !audio_is_playing(snd_camp)) {
 	audio_sound_gain(snd_level1, 0, 2000);
 	if (audio_sound_get_gain(snd_level1) <= 0) { 
 			audio_stop_sound(snd_level1);
