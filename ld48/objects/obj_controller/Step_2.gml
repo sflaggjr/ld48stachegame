@@ -8,6 +8,9 @@ if global.gameState == gState.play {
 
 if global.gameState = gState.pause {
 	instance_deactivate_all(true);
+	if keyboard_check_pressed(ord("Q")) {
+		global.gameState = gState.gameEnd;
+	}
 }
 else {
 	var _vx = camera_get_view_x(view_camera[0]);
