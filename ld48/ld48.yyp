@@ -63,6 +63,7 @@
     {"id":{"name":"rm_camp","path":"rooms/rm_camp/rm_camp.yy",},"order":1,},
     {"id":{"name":"snd_playerShot","path":"sounds/snd_playerShot/snd_playerShot.yy",},"order":1,},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
+    {"id":{"name":"spr_camp_floor","path":"sprites/spr_camp_floor/spr_camp_floor.yy",},"order":1,},
     {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},"order":2,},
   ],
   "Options": [
