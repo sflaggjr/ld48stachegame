@@ -55,6 +55,7 @@
     {"id":{"name":"spr_landingPad","path":"sprites/spr_landingPad/spr_landingPad.yy",},"order":3,},
     {"id":{"name":"fnt_textFont","path":"fonts/fnt_textFont/fnt_textFont.yy",},"order":0,},
     {"id":{"name":"obj_tetherBullet","path":"objects/obj_tetherBullet/obj_tetherBullet.yy",},"order":7,},
+    {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"order":4,},
     {"id":{"name":"spr_textbox_strip4","path":"sprites/spr_textbox_strip4/spr_textbox_strip4.yy",},"order":16,},
     {"id":{"name":"spr_hornet","path":"sprites/spr_hornet/spr_hornet.yy",},"order":7,},
     {"id":{"name":"obj_breakWall","path":"objects/obj_breakWall/obj_breakWall.yy",},"order":1,},
