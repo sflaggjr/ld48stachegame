@@ -5,7 +5,11 @@
 if (room == rm_camp)
 {
 
-	NewTextBox("OLD MAN: So, you managed to survive after all...",0);
+	var str = "OLD MAN: So, you managed to survive after all..."
+	NewTextBox(str, 0);
+	audio_play_sound(snd_talking, 5, false);
+	alarm[0] = string_length(str) * 2.5
+	
 	NewTextBox("PLAYER: You! How did you get down here?");
 	NewTextBox("OLD MAN: A skilled scavenger can make their way through the labyrinths.");
 	NewTextBox("OLD MAN: Scavengers built these camps and others like it further down.");
