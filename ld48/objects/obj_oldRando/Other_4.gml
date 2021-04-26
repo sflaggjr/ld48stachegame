@@ -14,5 +14,5 @@ NewTextBox("PLAYER: I don't...");
 NewTextBox("PLAYER: ...");
 NewTextBox("PLAYER: I don't have time for this.");
 NewTextBox("RANDO: 'They came from the East...'");
-NewTextBox("PLAYER: What was that?");
+NewTextBox("EASTMAN: What was that?");
 NewTextBox("RANDO: Just the ramblings of an old man...");
