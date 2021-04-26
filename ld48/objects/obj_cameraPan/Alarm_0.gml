@@ -7,8 +7,7 @@ NewTextBox("That twinklin' light incinerated all the people.",0);
 NewTextBox("After that, there was only the crater.",0);
 NewTextBox("It's been 20 years, give or take.",0);
 NewTextBox("This place is dangerous, \noverrun by the strange denizens \ngrowing deep inside the chasm.",0);
-NewTextBox("The only people who venture over the Rim \nand into the depths below are scavengers \nor fools...",0);
-
+NewTextBox("The only people who venture over the Rim \nand into the depths below are scavengers \nor fools...",1);
 
 
     

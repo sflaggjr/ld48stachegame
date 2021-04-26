@@ -4,6 +4,7 @@
 
 function NewTextBox(){
 	var _obj;
+	textBoxText = "";
 	
 	if (instance_exists(obj_text))
 	{
@@ -17,6 +18,7 @@ function NewTextBox(){
 	with (instance_create_layer(0,0, "Instances", _obj))
 	{
 		message = argument[0];
+		textBoxText = message;
 		if (instance_exists(other)) originInstance = other.id else originInstance = noone;
 		if (argument_count > 1) background = argument[1]; else background = 1;
 	}
@@ -32,4 +34,5 @@ function NewTextBox(){
 		}
 	}
 	
+
 }
