@@ -53,6 +53,7 @@
     {"id":{"name":"snd_talking","path":"sounds/snd_talking/snd_talking.yy",},"order":7,},
     {"id":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"order":10,},
     {"id":{"name":"rm_lvl2","path":"rooms/rm_lvl2/rm_lvl2.yy",},"order":3,},
+    {"id":{"name":"ScriptExecuteArray","path":"scripts/ScriptExecuteArray/ScriptExecuteArray.yy",},"order":7,},
     {"id":{"name":"spr_enemyBullet","path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},"order":4,},
     {"id":{"name":"NewTextBox","path":"scripts/NewTextBox/NewTextBox.yy",},"order":4,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":0,},
