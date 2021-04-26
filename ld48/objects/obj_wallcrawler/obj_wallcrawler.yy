@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bug",
-    "path": "sprites/spr_bug/spr_bug.yy",
+    "name": "spr_wallcrawler",
+    "path": "sprites/spr_wallcrawler/spr_wallcrawler.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,7 +35,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_pillBug",
+  "name": "obj_wallcrawler",
   "tags": [],
   "resourceType": "GMObject",
 }
