@@ -40,6 +40,8 @@ if global.gameState == gState.play {
 	//tether hitbox
 	if collision_line(x + 10, y, room_width / 2, 0, obj_worm, false, true) && tetherState == tState.active {
 		global.tether--;
+		tetherHit = true;
+		alarm[2] = 3;
 		tetherState = tState.invul;
 		audio_play_sound(snd_player_hit, 5, false);
 		alarm[1] = iframes;
@@ -53,10 +55,16 @@ if global.gameState == gState.play {
 	//enemy bullet collision
 	if place_meeting(x, y, obj_enemyBullet) && playerState == pState.active {
 		global.hp--
-		var closestBullet = instance_nearest(x, y, obj_enemyBullet);
+		var nearestBullet = instance_nearest(x, y, obj_enemyBullet);
+		if instance_exists(nearestBullet) {
+				hitX = nearestBullet.x;
+				hitY = nearestBullet.y;
+			}
 		audio_play_sound(snd_player_hit, 5, false);
-		instance_destroy(closestBullet);
+		instance_destroy(nearestBullet);
 		playerState = pState.invul;
+		playerHit = true;
+		alarm[3] = 3;
 		alarm[0] = iframes;
 		//instance_create_layer(x, y,"Instances", obj_screenshake);
 	}

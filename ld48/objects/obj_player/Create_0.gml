@@ -25,6 +25,8 @@ enum pFacing {
 playerState = pState.active;
 playerFacing = pFacing.right;
 tetherState = tState.active;
+playerHit = false;
+tetherHit = false;
 //Controls
 keyUp = ord("W");
 keyDown = ord("S");

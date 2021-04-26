@@ -54,6 +54,9 @@ if global.gameState == gState.play {
 			draw_circle_color(x + 20, y + 15, 15, c_white, c_yellow, false);
 		}
 	}
+	if playerHit {
+		draw_circle_color(hitX, hitY, 15, c_yellow, c_orange, false);
+	}
 }
 
 if global.gameState == gState.rest {
