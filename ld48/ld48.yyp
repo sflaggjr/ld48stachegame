@@ -31,6 +31,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},"order":0,},
     {"id":{"name":"spr_laser","path":"sprites/spr_laser/spr_laser.yy",},"order":1,},
     {"id":{"name":"snd_spiders","path":"sounds/snd_spiders/snd_spiders.yy",},"order":3,},
+    {"id":{"name":"snd_talking","path":"sounds/snd_talking/snd_talking.yy",},"order":7,},
     {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},"order":9,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":3,},
     {"id":{"name":"PlayerStateLocked","path":"scripts/PlayerStateLocked/PlayerStateLocked.yy",},"order":3,},

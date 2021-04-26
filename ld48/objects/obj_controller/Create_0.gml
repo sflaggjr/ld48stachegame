@@ -20,5 +20,9 @@ global.uiFontSize = 2;
 
 global.textSpeed = 0.75;
 global.maxHP = 5;
-
+firstTime = true;
+alphaDecay = 1
+decay = false;
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
+//set timer to decay instructions
+alarm[0] = 400;
