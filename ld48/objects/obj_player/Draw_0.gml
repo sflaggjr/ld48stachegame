@@ -59,6 +59,6 @@ if global.gameState == gState.play {
 	}
 }
 
-if global.gameState == gState.rest {
+if (global.gameState == gState.rest) OR (global.gameState == gState.intro) {
 	draw_self();
 }
