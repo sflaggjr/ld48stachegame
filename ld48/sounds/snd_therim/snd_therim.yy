@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.6,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_therim.wav",
+  "soundFile": "snd_theRim.wav",
   "duration": 113.782776,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_therim",
+  "name": "snd_theRim",
   "tags": [],
   "resourceType": "GMSound",
 }
