@@ -33,14 +33,10 @@ if global.gameState = gState.rest {
 				if button1 = 1 {
 					global.hp = global.maxHP;
 					obj_crate.used = true;
-					//room_goto_next();
-					//global.gameState = gState.play;
 				}
 			if button2 = 1 {
 				global.tether = global.maxHP;
 				obj_crate.used = true;
-				//room_goto_next();
-				//global.gameState = gState.play;
 				}
 			}
 		}
