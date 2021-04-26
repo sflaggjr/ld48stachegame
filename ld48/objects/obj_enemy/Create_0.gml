@@ -13,3 +13,4 @@ enum eStates {
 //Variable Definition
 eHp = 1;
 enemyState = 0;
+enemyHit = false;

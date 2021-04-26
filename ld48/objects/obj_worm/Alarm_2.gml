@@ -1,2 +1,2 @@
 enemyState = eStates.reset;
-alarm[1] = 200;
+alarm[1] = primeTime;
