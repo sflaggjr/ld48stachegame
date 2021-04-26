@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.36,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_level1.mp3",
-  "duration": 217.187042,
+  "soundFile": "snd_level1.wav",
+  "duration": 148.576431,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
