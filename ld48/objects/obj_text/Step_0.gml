@@ -9,10 +9,17 @@ x2 = lerp(x2,x2Target,lerpProgress);
 
 if (keyboard_check_pressed(vk_space))
 {
-	var _messageLength = string_length(message);	
+	var _messageLength = string_length(message);
+	audio_play_sound(snd_talking, 5, false);
+	alarm[0] = _messageLength/10
+	
+	show_debug_message(_messageLength);
+	
 	if (textProgress >= _messageLength)
 	{
 		instance_destroy();
+		
+		
 		if (instance_exists(obj_textQueued))
 		{
 			with (obj_textQueued) ticket--;

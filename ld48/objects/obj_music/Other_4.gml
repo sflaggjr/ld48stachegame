@@ -1,5 +1,3 @@
-show_debug_message("SWITCHING ROOMS!");
-
 if (room == rm_lvl1) {
 	//Kill the previous tracks volume
 	audio_sound_gain(snd_camp, 0, 1000);	
