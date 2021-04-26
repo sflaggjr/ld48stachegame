@@ -3,7 +3,6 @@ if global.gameState != gState.gameEnd {
 	if global.gameState = gState.menu {
 		draw_set_font(fnt_textFont);
 		draw_set_color(c_yellow);
-		draw_text(room_width / 2, y, "The Rim");
 	}
 
 	//Draw Paused if game is paused

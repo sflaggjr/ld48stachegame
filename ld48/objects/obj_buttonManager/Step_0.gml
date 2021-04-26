@@ -28,19 +28,21 @@ if global.gameState = gState.menu{
 }
 //Actions for what button is pushed at the camp
 if global.gameState = gState.rest {
-	if buttonState == bState.hovered {
-		if mouse_check_button_pressed(mb_left) {
-			if button1 = 1 {
-				global.hp = global.maxHP;
-				room_goto_next();
-				global.gameState = gState.play;
-			}
-		if button2 = 1 {
-			global.tether = global.maxHP;
-			room_goto_next();
-			global.gameState = gState.play;
+		if buttonState == bState.hovered {
+			if mouse_check_button_pressed(mb_left) {
+				if button1 = 1 {
+					global.hp = global.maxHP;
+					obj_crate.used = true;
+					//room_goto_next();
+					//global.gameState = gState.play;
+				}
+			if button2 = 1 {
+				global.tether = global.maxHP;
+				obj_crate.used = true;
+				//room_goto_next();
+				//global.gameState = gState.play;
+				}
 			}
 		}
-	}
 }
 		
