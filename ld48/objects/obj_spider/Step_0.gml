@@ -17,6 +17,7 @@ if instance_exists(obj_player){
 			instance_create_layer(x, y, "Instances", obj_tetherBullet);
 			canShoot = false;
 			alarm[1] = shotCooldown;
+			audio_play_sound(snd_spiders, 5, false);
 		}
 		//If we get close to the top of the screen, update Y to keep spider on screen
 		if obj_player.tetherState != tState.destroyed {
