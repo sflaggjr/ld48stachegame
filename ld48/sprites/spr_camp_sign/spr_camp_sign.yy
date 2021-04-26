@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Level",
-    "path": "folders/Sprites/Level.yy",
+    "name": "Camp",
+    "path": "folders/Sprites/Level/Camp.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_camp_sign",
