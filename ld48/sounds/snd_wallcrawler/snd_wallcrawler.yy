@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_wallcrawler.wav",
-  "duration": 1.005,
+  "duration": 0.452914,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",
