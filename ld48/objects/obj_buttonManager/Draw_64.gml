@@ -60,7 +60,7 @@ if global.gameState == gState.menu{
 //Button UI for the campsite
 if global.gameState == gState.rest {
 	if instance_exists(obj_crate) {
-		if obj_crate.contact {
+		if obj_crate.contact && obj_crate.used = false {
 			var button1X = obj_crate.x - 85;
 			var button1Y = obj_crate.y - 200;
 			var button2X = obj_crate.x + 75;

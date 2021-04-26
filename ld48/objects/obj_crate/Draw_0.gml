@@ -2,9 +2,9 @@
 // You can write your code in this editor
 draw_self();
 if used {
-	sprite_index = 1;
+	image_index = 1;
 }
 
-if contact {
+if contact && used == false{
 	draw_text(x , y - 250, "Use the Scrap to fix?");
 }
