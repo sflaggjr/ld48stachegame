@@ -108,14 +108,11 @@
     {"name":"inst_15CCFB6","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_22F409E","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_725FAFC","path":"rooms/rm_lvl1/rm_lvl1.yy",},
-<<<<<<< HEAD
     {"name":"inst_419798DA","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_3809FA55","path":"rooms/rm_lvl1/rm_lvl1.yy",},
-=======
     {"name":"inst_3C30A2FF","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_48BC857","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_4633125","path":"rooms/rm_lvl1/rm_lvl1.yy",},
->>>>>>> refs/remotes/origin/main
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
