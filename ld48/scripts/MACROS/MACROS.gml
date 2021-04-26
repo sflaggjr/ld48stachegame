@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function MACROS(){
 	#macro FRAME_RATE 60
+	#macro CARDINAL_DIR round(direction/180)
 	#macro RESOLUTION_W 1366
 	#macro RESOLUTION_H 768
 }

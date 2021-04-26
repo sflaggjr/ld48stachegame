@@ -123,4 +123,31 @@ if global.gameState == gState.rest
 		
 		// Update Image Index
 		PlayerAnimateSprite();
+		
+		
+		// Below will eventually be used to activate NPCs or sign posts
+		// To trigger dialogues or whatever. This code will activate
+		// the script and arguments attached to the entities (NPCs or signs)
+		// These entity's are all children of par_entity.
+		
+		// if (keyActivate)
+		// {
+		//	var _activateX = lengthdir_x(10, direction);
+		//	var _activateY = lengthdir_y(10, direction);
+		//	activate = instance_position(x+_activateX, y+_activateY, par_entity);
+		//	
+		//	if (activate.entityActivateScript != -1) 
+		//	{
+		//		ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
+		//		
+		//		if (activate.entityNPC)
+		//		{
+		//			with (activate)
+		//			{
+		//				direction = point_direction(x,y,other.x,other.y);
+		//				image_index = CARDINAL_DIR;
+		//			}
+		//		}
+		//	}
+		//  }
 	}
