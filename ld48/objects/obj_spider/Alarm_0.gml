@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description reset spider back to active.
 enemyState = eStates.active;

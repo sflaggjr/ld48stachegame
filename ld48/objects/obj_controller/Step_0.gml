@@ -15,18 +15,10 @@ else {
 	instance_activate_all();
 }
 
-
-if global.gameState = gState.rest {
-	if keyboard_check_pressed(ord("H")) {
-		global.hp = maxHP;
-		room_goto(rm_lvl1);
-		global.gameState = gState.play;
-	}
-	if keyboard_check_pressed(ord("T")) {
-		global.tether = maxHP;
-		room_goto(rm_lvl1);
-		global.gameState = gState.play;
-	}
+//End of Game Handling
+if global.gameState = gState.gameEnd {
+	room_goto(rm_menu);
+	global.gameState = gState.menu;
 }
 //deactivate any instance that isn't in the camera view
 var _vx = camera_get_view_x(view_camera[0]);

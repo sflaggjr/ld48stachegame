@@ -52,6 +52,7 @@ if global.gameState == gState.play {
 	if place_meeting(x, y, obj_enemyBullet) && playerState == pState.active {
 		global.hp--
 		var closestBullet = instance_nearest(x, y, obj_enemyBullet);
+		audio_play_sound(snd_player_hit, 5, false);
 		instance_destroy(closestBullet);
 		playerState = pState.invul;
 		alarm[0] = iframes;
@@ -80,7 +81,6 @@ if global.gameState == gState.play {
 		
 	}
 	if global.hp <= 0 {
-		//playerState = pState.dead;
 		global.gameState = gState.gameEnd;
 		instance_destroy();
 		alarm[2] = 60;

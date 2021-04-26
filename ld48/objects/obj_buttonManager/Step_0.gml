@@ -7,6 +7,7 @@ else {
 	mouseX = mouse_x;
 	mouseY = mouse_y;
 }
+//Actions for when what button is pushed on the main menu
 if global.gameState = gState.menu{
 	if buttonState == bState.hovered {
 		if mouse_check_button_pressed(mb_left) {
@@ -20,7 +21,7 @@ if global.gameState = gState.menu{
 		}	
 	}
 }
-
+//Actions for what button is pushed at the camp
 if global.gameState = gState.rest {
 	if buttonState == bState.hovered {
 		if mouse_check_button_pressed(mb_left) {

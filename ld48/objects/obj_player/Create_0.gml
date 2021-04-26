@@ -1,4 +1,4 @@
-//Player States
+/// @description Player States
 enum pState {
 	active,
 	dead,
@@ -10,11 +10,13 @@ enum pState {
 	idle,
 	locked
 }
+//Tether States
 enum tState {
 	active,
 	invul,
 	destroyed
 }
+//Player facing
 enum pFacing {
 	left,
 	right
