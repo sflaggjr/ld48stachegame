@@ -6,8 +6,8 @@ if (room == rm_lvl1 && !audio_is_playing(snd_level1)) {
 	}
 	
 	audio_play_sound(snd_level1, 1000, true);
-	
-} if (room == rm_camp) {
+}
+if (room == rm_camp) {
 	audio_sound_gain(snd_level1, 0, 2000);
 	if (audio_sound_get_gain(snd_level1) <= 0) { 
 			audio_stop_sound(snd_level1);

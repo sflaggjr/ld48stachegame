@@ -1,3 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description reset player invul timer
+
 playerState = pState.active;

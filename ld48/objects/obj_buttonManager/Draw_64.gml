@@ -4,9 +4,9 @@ var xMargin = 10;
 var yMargin = 5;
 button1 = 0;
 button2 = 0;
-draw_text(mouseX, mouseY, "X: " + string(mouseX) + "Y: " + string(mouseY));
 
-if global.gameState = gState.menu {
+//Draw button UI for the main menu
+if global.gameState == gState.menu {
 	var button1X = 480;
 	var button1Y = 680;
 	var button2X = 800;
@@ -22,7 +22,7 @@ if global.gameState = gState.menu {
 	var y1_b2 = button2Y - sprite_get_yoffset(spr_button);
 	var x2_b2 = x1_b2 + sprite_get_width(spr_button);
 	var y2_b2 = y1_b2 + sprite_get_height(spr_button);
-	
+//Button interactivity	
 	if mouseX >= x1_b1 && mouseX <= x2_b1 && mouseY >= y1_b1 && mouseY <= y2_b1 {
 		buttonState = bState.hovered;
 		button1 = 1;
@@ -38,8 +38,8 @@ if global.gameState = gState.menu {
 	draw_text(x1_b1 + xMargin, y1_b1 + yMargin, "Play");
 	draw_text(x1_b2 + xMargin, y1_b2 + yMargin, "Quit");
 }
-
-if global.gameState = gState.rest {
+//Button UI for the campsite
+if global.gameState == gState.rest {
 	var button1X = 250;
 	var button1Y = viewY;
 	var button2X = 450;
@@ -54,6 +54,7 @@ if global.gameState = gState.rest {
 	var y1_b2 = button2Y - sprite_get_yoffset(spr_button);
 	var x2_b2 = x1_b2 + sprite_get_width(spr_button);
 	var y2_b2 = y1_b2 + sprite_get_height(spr_button);
+//Button interactivity
 	if mouseX >= x1_b1 && mouseX <= x2_b1 && mouseY >= y1_b1 && mouseY <= y2_b1 {
 		buttonState = bState.hovered;
 		button1 = 1;

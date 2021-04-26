@@ -1,8 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-// Inherit the parent event
 event_inherited();
+//
 if enemyState = eStates.primed {
 	if y < targetY {
 		y += spd;
@@ -13,7 +10,7 @@ if enemyState = eStates.primed {
 		enemyState = eStates.reset;
 	}
 }
-
+//Shoot an acid ball at player's tether.
 if instance_exists(obj_player){
 	if enemyState = eStates.active {
 		if canShoot = true {
@@ -21,6 +18,7 @@ if instance_exists(obj_player){
 			canShoot = false;
 			alarm[1] = shotCooldown;
 		}
+		//If we get close to the top of the screen, update Y to keep spider on screen
 		var updateY = camera_get_view_y(view_camera[0]);
 		offsetY = point_distance(x, spawnY, x, camera_get_view_y(view_camera[0]));
 		y =  updateY + offsetY;
