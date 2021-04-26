@@ -98,7 +98,7 @@ if global.gameState == gState.play {
 	}
 }
 
-if global.gameState == gState.rest 
+if (global.gameState == gState.rest) OR (global.gameState == gState.intro)
 	{
 		keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 		keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
