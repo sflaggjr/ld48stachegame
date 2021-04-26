@@ -19,5 +19,6 @@ if enemyState = eStates.active {
 	if x != lastX + max_x {
 		x +=spd;	
 	}
+	
 }
 

@@ -17,6 +17,7 @@ else {
 			instance_create_layer(x, y, "Instances", obj_enemyBullet)
 			canShoot = false;
 			alarm[0] = shotCooldown;
+			audio_play_sound(snd_wallcrawler, 5, false);
 		}
 	}
 }
