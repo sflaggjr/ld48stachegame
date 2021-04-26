@@ -39,6 +39,10 @@ collisionOffset = 10;
 iframes = 60;
 firing = false;
 
+//Sprite variables
+spriteRun = spr_player_run;
+spriteIdle = spr_player_stand;
 
+localFrame = 0;
 
 

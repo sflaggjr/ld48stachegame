@@ -86,3 +86,18 @@ if global.gameState == gState.play {
 		alarm[2] = 60;
 	}
 }
+
+if global.gameState == gState.rest 
+	{
+		keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+		keyLeft = keyboard_check(vk_right) || keyboard_check(ord("D"));
+		keyActivate = keyboard_check(vk_space);
+		
+		inputDirection = point_direction(0,0,keyRight-keyLeft,0);
+		inputMagnitude = (keyRight- keyLeft != 0);
+		
+		//Movement
+		hSpeed = lengthdir_x(inputMagnitude, inputDirection);
+		
+		x+= hSpeed;
+	}
