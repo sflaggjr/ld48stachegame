@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-var 
+
 if enemyState = eStates.primed {
 	if x < lastX + primed_x {
 		x += spd;

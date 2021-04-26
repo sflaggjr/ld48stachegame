@@ -5,5 +5,7 @@ if enemyState != eStates.primed {
 	eHp--;
 	//enemyState = eStates.invul;
 	alarm[11] = 30;
+	enemyHit = true;
+	alarm[10] = 30;
 	instance_destroy(nearestBullet);
 }
