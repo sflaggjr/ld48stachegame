@@ -59,7 +59,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 32,
-    "yorigin": 85,
+    "yorigin": 81,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_stand","path":"sprites/spr_player_stand/spr_player_stand.yy",},

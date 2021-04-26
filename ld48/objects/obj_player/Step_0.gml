@@ -94,7 +94,7 @@ if global.gameState == gState.rest
 		keyActivate = keyboard_check(vk_space);
 		
 		inputDirection = point_direction(0,0,keyRight-keyLeft,0);
-		inputMagnitude = (keyRight- keyLeft != 0);
+		inputMagnitude = (keyRight - keyLeft != 0);
 		
 		//Movement
 		hSpeed = lengthdir_x(inputMagnitude * runSpeed, inputDirection);
