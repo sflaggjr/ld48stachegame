@@ -41,11 +41,13 @@ if global.gameState == gState.play {
 	if collision_line(x + 10, y, room_width / 2, 0, obj_worm, false, true) && tetherState == tState.active {
 		global.tether--;
 		tetherState = tState.invul;
+		audio_play_sound(snd_player_hit, 5, false);
 		alarm[1] = iframes;
 	}
 	if collision_line(x + 10, y, room_width / 2, 0, obj_tetherBullet, false, true) && tetherState == tState.active {
 			global.tether--;
 			tetherState = tState.invul;
+			audio_play_sound(snd_player_hit, 5, false);
 			alarm[1] = iframes;
 	}
 	//enemy bullet collision
@@ -56,7 +58,7 @@ if global.gameState == gState.play {
 		instance_destroy(closestBullet);
 		playerState = pState.invul;
 		alarm[0] = iframes;
-		instance_create_layer(x, y,"Instances", obj_screenshake);
+		//instance_create_layer(x, y,"Instances", obj_screenshake);
 	}
 
 	//determine player facing
