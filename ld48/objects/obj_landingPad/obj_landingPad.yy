@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_wall",
-    "path": "sprites/spr_wall/spr_wall.yy",
+    "name": "spr_landingPad",
+    "path": "sprites/spr_landingPad/spr_landingPad.yy",
   },
   "solid": false,
   "visible": true,

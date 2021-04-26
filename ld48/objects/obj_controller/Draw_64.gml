@@ -15,4 +15,8 @@ if global.gameState != gState.gameEnd {
 	// if global.gameState = gState.rest {
 	//	draw_sprite(spr_player, 0, global.targetX, global.targetY);
 	//}
+	if global.gameState = gState.play && firstTime = true {
+		draw_text_ext_color(150, 30, "Get to the camp at the bottom of the map", 5, 300, c_white, c_white, c_yellow, c_yellow, alphaDecay);
+		draw_text_ext_color(150, 60, "WASD on your keyboard to move. Left click on your mouse to show", 5, 1000, c_white, c_white, c_yellow, c_yellow, alphaDecay);
+	}
 }
