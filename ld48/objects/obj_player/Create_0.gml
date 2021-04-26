@@ -1,4 +1,4 @@
-//Player States
+/// @description Player States
 enum pState {
 	active,
 	dead,
