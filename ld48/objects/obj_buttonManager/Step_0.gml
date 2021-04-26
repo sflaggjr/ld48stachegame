@@ -18,7 +18,7 @@ if global.gameState = gState.menu{
 			if button2 = 1 {
 				game_end();
 			}
-			//Debug button for Camp room
+			//Debug button for Camp rooms
 			if button3 = 1 {
 				global.gameState = gState.rest;
 				room_goto(rm_camp);
