@@ -1,18 +1,11 @@
 if keyboard_check_pressed(vk_escape) {
 	if global.gameState == gState.play {
 		global.gameState = gState.pause;
+		instance_deactivate_all(true)
 	}
 	else {
 		global.gameState = gState.play;
 	}
-}
-
-//Pause Game handling
-if global.gameState = gState.pause {
-	instance_deactivate_all(true);
-}
-else {
-	instance_activate_all();
 }
 
 //End of Game Handling
