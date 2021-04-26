@@ -56,6 +56,7 @@ if global.gameState == gState.play {
 		instance_destroy(closestBullet);
 		playerState = pState.invul;
 		alarm[0] = iframes;
+		instance_create_layer(x, y,"Instances", obj_screenshake);
 	}
 
 	//determine player facing
@@ -70,7 +71,7 @@ if global.gameState == gState.play {
 		tetherState = tState.destroyed;
 	}
 
-	if tetherState = tState.destroyed {
+	if tetherState == tState.destroyed {
 		vSpd = 30;
 		y += vSpd;
 		//Game over if tether is destroyed and you're lower than the room height
@@ -94,7 +95,7 @@ if global.gameState == gState.rest
 		keyActivate = keyboard_check(vk_space);
 		
 		inputDirection = point_direction(0,0,keyRight-keyLeft,0);
-		inputMagnitude = (keyRight- keyLeft != 0);
+		inputMagnitude = (keyRight - keyLeft != 0);
 		
 		//Movement
 		hSpeed = lengthdir_x(inputMagnitude * runSpeed, inputDirection);
