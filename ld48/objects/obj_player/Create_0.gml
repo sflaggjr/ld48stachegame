@@ -38,6 +38,7 @@ hSpd = 10;
 collisionOffset = 10;
 iframes = 60;
 firing = false;
+runSpeed = 5;
 
 //Sprite variables
 spriteRun = spr_player_run;

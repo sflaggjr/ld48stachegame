@@ -90,14 +90,26 @@ if global.gameState == gState.play {
 if global.gameState == gState.rest 
 	{
 		keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
-		keyLeft = keyboard_check(vk_right) || keyboard_check(ord("D"));
+		keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 		keyActivate = keyboard_check(vk_space);
 		
 		inputDirection = point_direction(0,0,keyRight-keyLeft,0);
 		inputMagnitude = (keyRight- keyLeft != 0);
 		
 		//Movement
-		hSpeed = lengthdir_x(inputMagnitude, inputDirection);
+		hSpeed = lengthdir_x(inputMagnitude * runSpeed, inputDirection);
 		
 		x+= hSpeed;
+		
+		// Update Sprite Index
+		var _oldSprite = sprite_index;
+		if (inputMagnitude != 0)
+		{
+				direction = inputDirection;
+				sprite_index = spriteRun;
+		} else sprite_index = spriteIdle;
+		if (_oldSprite != sprite_index) localFrame = 0;
+		
+		// Update Image Index
+		PlayerAnimateSprite();
 	}

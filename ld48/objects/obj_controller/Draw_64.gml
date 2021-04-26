@@ -12,7 +12,7 @@ if global.gameState != gState.gameEnd {
 		draw_text(x + (room_width / 2), y, "Paused");
 	}
 
-	if global.gameState = gState.rest {
-		draw_sprite(spr_player, 0, global.targetX, global.targetY);
-	}
+	// if global.gameState = gState.rest {
+	//	draw_sprite(spr_player, 0, global.targetX, global.targetY);
+	//}
 }

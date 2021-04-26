@@ -55,3 +55,7 @@ if global.gameState == gState.play {
 		}
 	}
 }
+
+if global.gameState == gState.rest {
+	draw_self();
+}
