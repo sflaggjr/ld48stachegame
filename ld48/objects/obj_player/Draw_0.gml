@@ -15,7 +15,8 @@ if global.gameState == gState.play {
 		}
 		if tetherState = tState.invul {
 			draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_teal, c_teal);
-			draw_text(x + sprite_get_xoffset(spr_player), y - sprite_get_height(spr_player), "Tether Strength: " + string(global.tether));
+			draw_set_color(c_white);
+			draw_text(x - sprite_get_xoffset(spr_player), y - sprite_get_yoffset(spr_player), "Tether Strength: " + string(global.tether));
 		}
 	}
 	else {
@@ -60,7 +61,7 @@ if global.gameState == gState.play {
 	}
 	if playerState = pState.invul {
 		draw_set_color(c_red);
-		draw_text(x + sprite_get_xoffset(spr_player), y - sprite_get_height(spr_player), "Armor: " + string(global.hp));
+		draw_text(x + sprite_get_xoffset(spr_player), y - sprite_get_yoffset(spr_player), "Armor: " + string(global.hp));
 	}
 }
 

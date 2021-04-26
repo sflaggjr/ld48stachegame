@@ -1,12 +1,15 @@
-if keyboard_check_pressed(vk_escape)  && global.gameState == gState.play {
-	if global.gameState == gState.play {
+if global.gameState == gState.play || global.gameState == gState.pause {
+	if keyboard_check_pressed(vk_escape) {
+		if global.gameState == gState.play {
 		global.gameState = gState.pause;
-		instance_deactivate_all(true)
 	}
-	else {
+	else if global.gameState == gState.pause {
 		global.gameState = gState.play;
+		}
 	}
-}
+}	
+
+
 if keyboard_check_pressed(vk_enter) && global.gameState == gState.intro{
 	room_goto_next();
 	global.gameState = gState.play
