@@ -13,6 +13,6 @@ if global.gameState != gState.gameEnd {
 	}
 
 	if global.gameState = gState.rest {
-		draw_sprite(spr_player, 0, global.targetX, global.targetY);
+		//draw_sprite(spr_player, 0, global.targetX, global.targetY);
 	}
 }

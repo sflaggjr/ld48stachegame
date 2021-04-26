@@ -18,6 +18,11 @@ if global.gameState = gState.menu{
 			if button2 = 1 {
 				game_end();
 			}
+			//Debug button for Camp room
+			if button3 = 1 {
+				global.gameState = gState.rest;
+				room_goto(rm_camp);
+			}
 		}	
 	}
 }
@@ -34,6 +39,9 @@ if global.gameState = gState.rest {
 			global.tether = global.maxHP;
 			room_goto(rm_lvl1);
 			global.gameState = gState.play;
+			global.targetRoom = rm_camp;
+			global.targetX = 800;
+			global.targetY = 560;
 		}
 			
 		}
