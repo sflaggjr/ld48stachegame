@@ -32,18 +32,14 @@ if global.gameState = gState.rest {
 		if mouse_check_button_pressed(mb_left) {
 			if button1 = 1 {
 				global.hp = global.maxHP;
-				room_goto(rm_lvl1);
+				room_goto_next();
 				global.gameState = gState.play;
 			}
 		if button2 = 1 {
 			global.tether = global.maxHP;
-			room_goto(rm_lvl1);
+			room_goto_next();
 			global.gameState = gState.play;
-			global.targetRoom = rm_camp;
-			global.targetX = 800;
-			global.targetY = 560;
-		}
-			
+			}
 		}
 	}
 }
