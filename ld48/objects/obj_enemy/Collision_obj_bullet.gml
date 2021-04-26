@@ -13,3 +13,14 @@ if enemyState != eStates.primed {
 	alarm[10] = 3;
 	instance_destroy(nearestBullet);
 }
+
+if enemyState == eStates.primed {
+	var nearestBullet = instance_nearest(x, y, obj_bullet);	
+	if instance_exists(nearestBullet) {
+		hitX = nearestBullet.x;
+		hitY = nearestBullet.y;
+	}
+	enemyHit = true;
+	alarm[10] = 3;
+	instance_destroy(nearestBullet);
+}
