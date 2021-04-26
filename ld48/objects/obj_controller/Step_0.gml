@@ -7,9 +7,13 @@ if keyboard_check_pressed(vk_escape)  && global.gameState == gState.play {
 		global.gameState = gState.play;
 	}
 }
+if keyboard_check_pressed(vk_enter) && global.gameState == gState.intro{
+	room_goto_next();
+	global.gameState = gState.play
+}
 
 //End of Game Handling
-if global.gameState = gState.gameEnd {
+if global.gameState == gState.gameEnd {
 	room_goto(rm_menu);
 	global.gameState = gState.menu;
 }
