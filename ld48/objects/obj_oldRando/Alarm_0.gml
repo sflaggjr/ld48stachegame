@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if (room == rm_theRim)
 {
-	NewTextBox("OLD SCAVENGER: You really going down there?",2);
+	NewTextBox("OLD SCAVENGER: You really going down there? \n \n [Press SPACE to Continue]",2);
 	NewTextBox("MYSTERIOUS FIGURE: ...", 0);
 	NewTextBox("MYSTERIOUS FIGURE: I think so.", 0);
 	NewTextBox("OLD SCAVENGER: I don't get it with your kind.",2);
