@@ -1,6 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"snd_player_hit","path":"sounds/snd_player_hit/snd_player_hit.yy",},"order":0,},
+    {"id":{"name":"snd_wasp","path":"sounds/snd_wasp/snd_wasp.yy",},"order":2,},
     {"id":{"name":"obj_wall_sprite","path":"objects/obj_wall_sprite/obj_wall_sprite.yy",},"order":3,},
+    {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},"order":1,},
     {"id":{"name":"spr_spider","path":"sprites/spr_spider/spr_spider.yy",},"order":9,},
     {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},"order":2,},
     {"id":{"name":"obj_hornet","path":"objects/obj_hornet/obj_hornet.yy",},"order":3,},
@@ -96,6 +99,7 @@
     {"folderPath":"folders/Scripts/Debug Scripts.yy","order":5,"resourceVersion":"1.0","name":"Debug Scripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/NPCs.yy","order":11,"resourceVersion":"1.0","name":"NPCs","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player.yy","order":20,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sounds/sfx.yy","order":4,"resourceVersion":"1.0","name":"sfx","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
