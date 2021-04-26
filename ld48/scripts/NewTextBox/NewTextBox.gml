@@ -27,6 +27,8 @@ function NewTextBox(){
 		{
 			lastState = playerState;
 			playerState = PlayerStateLocked;
+			
+			
 		}
 	}
 	
