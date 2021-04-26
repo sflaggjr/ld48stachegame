@@ -6,7 +6,7 @@ if global.gameState == gState.play {
 	}
 }
 
-if global.gameState = gState.pause {
+if global.gameState == gState.pause{
 	instance_deactivate_all(true);
 	if keyboard_check_pressed(ord("Q")) {
 		global.gameState = gState.gameEnd;

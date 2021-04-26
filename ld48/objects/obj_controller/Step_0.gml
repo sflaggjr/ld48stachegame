@@ -1,4 +1,4 @@
-if keyboard_check_pressed(vk_escape) {
+if keyboard_check_pressed(vk_escape)  && global.gameState == gState.play {
 	if global.gameState == gState.play {
 		global.gameState = gState.pause;
 		instance_deactivate_all(true)
