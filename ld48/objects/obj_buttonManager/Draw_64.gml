@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var xMargin = 10;
+var xMargin = 30;
 var yMargin = 5;
 button1 = 0;
 button2 = 0;
@@ -39,6 +39,7 @@ if global.gameState == gState.menu{
 	if mouseX >= x1_b1 && mouseX <= x2_b1 && mouseY >= y1_b1 && mouseY <= y2_b1 {
 		buttonState = bState.hovered;
 		button1 = 1;
+		
 		//draw_text(mouseX, mouseY, "Button 1");
 	}
 	else if mouseX >= x1_b2 && mouseX <= x2_b2 && mouseY >= y1_b2 && mouseY <= y2_b2 {
