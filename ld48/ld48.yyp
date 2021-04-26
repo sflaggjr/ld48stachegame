@@ -36,6 +36,7 @@
     {"id":{"name":"snd_spiders","path":"sounds/snd_spiders/snd_spiders.yy",},"order":3,},
     {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},"order":9,},
     {"id":{"name":"spr_player_run","path":"sprites/spr_player_run/spr_player_run.yy",},"order":3,},
+    {"id":{"name":"RandoText","path":"scripts/RandoText/RandoText.yy",},"order":8,},
     {"id":{"name":"spr_interloper","path":"sprites/spr_interloper/spr_interloper.yy",},"order":1,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":3,},
     {"id":{"name":"PlayerStateLocked","path":"scripts/PlayerStateLocked/PlayerStateLocked.yy",},"order":3,},
