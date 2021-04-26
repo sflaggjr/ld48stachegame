@@ -17,6 +17,7 @@
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":2,},
     {"id":{"name":"Script6","path":"scripts/Script6/Script6.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
+    {"id":{"name":"spr_menu_bg","path":"sprites/spr_menu_bg/spr_menu_bg.yy",},"order":0,},
     {"id":{"name":"rm_theRim","path":"rooms/rm_theRim/rm_theRim.yy",},"order":5,},
     {"id":{"name":"obj_music","path":"objects/obj_music/obj_music.yy",},"order":12,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
@@ -119,6 +120,7 @@
     {"folderPath":"folders/Sprites/Level.yy","order":21,"resourceVersion":"1.0","name":"Level","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Level/Camp.yy","order":3,"resourceVersion":"1.0","name":"Camp","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Debug.yy","order":13,"resourceVersion":"1.0","name":"Debug","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/UI.yy","order":22,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
