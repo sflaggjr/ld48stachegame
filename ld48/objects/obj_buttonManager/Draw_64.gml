@@ -9,7 +9,7 @@ button4 = 0;
 button5 = 0;
 
 //Draw button UI for the main menu
-if global.gameState == gState.menu {
+if global.gameState == gState.menu{
 	//button 1 X/Y
 	var button1X = 480;
 	var button1Y = 680;

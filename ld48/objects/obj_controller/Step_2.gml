@@ -20,3 +20,7 @@ else {
 	instance_deactivate_all(true);
 	instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 }
+
+if global.gameState == gState.intro {
+
+}
