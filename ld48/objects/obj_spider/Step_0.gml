@@ -19,9 +19,11 @@ if instance_exists(obj_player){
 			alarm[1] = shotCooldown;
 		}
 		//If we get close to the top of the screen, update Y to keep spider on screen
-		var updateY = camera_get_view_y(view_camera[0]);
-		offsetY = point_distance(x, spawnY, x, camera_get_view_y(view_camera[0]));
-		y =  updateY + offsetY;
+		if obj_player.tetherState != tState.destroyed {
+			var updateY = camera_get_view_y(view_camera[0]);
+			offsetY = point_distance(x, targetY, x, view_get_yport(view_yport[0]));
+			y =  updateY + offsetY;
+		}
 	}
 }
 
