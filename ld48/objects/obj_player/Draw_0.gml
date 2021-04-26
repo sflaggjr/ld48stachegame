@@ -1,7 +1,12 @@
 //If the game is in a play State, draw all the things!
+
+if (global.gameState == gState.rest) || (global.gameState == gState.intro) {
+	draw_self();
+}
 if global.gameState == gState.play {
 	if playerState != pState.dead {
 	draw_self();
+	sprite_index = spr_player;
 	}
 	//Draw Tether
 	if tetherState != tState.destroyed {
@@ -59,6 +64,3 @@ if global.gameState == gState.play {
 	}
 }
 
-if (global.gameState == gState.rest) OR (global.gameState == gState.intro) {
-	draw_self();
-}
