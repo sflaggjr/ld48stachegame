@@ -58,7 +58,6 @@
     {"id":{"name":"rm_camp","path":"rooms/rm_camp/rm_camp.yy",},"order":1,},
     {"id":{"name":"snd_playerShot","path":"sounds/snd_playerShot/snd_playerShot.yy",},"order":0,},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
-    {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},"order":2,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -73,7 +72,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
+    {"roomId":{"name":"","path":"",},},
     {"roomId":{"name":"rm_camp","path":"rooms/rm_camp/rm_camp.yy",},},
   ],
   "Folders": [

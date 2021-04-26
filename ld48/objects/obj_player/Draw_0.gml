@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//If the game is in a play State, draw all the things!
 if global.gameState == gState.play {
 	if playerState != pState.dead {
 	draw_self();
@@ -14,13 +13,15 @@ if global.gameState == gState.play {
 		}
 	}
 	else {
+		//if the player is falling to their death, make it look like a bad time.
 		image_angle = 45;
 	}
+	//place for eventual UI drawing, for now we're just writing these values to the screen.
 	draw_text(x + 30, y + 10, global.tether);
 	draw_set_color(c_red);
 	draw_text(x - 30, y + 10, global.hp);
 
-
+//Determine mouse position to show update the spite and muzzle flash
 	if mouse_x < x && mouse_y < y {
 		sprite_index = spr_playerUp;
 		image_index = 0;

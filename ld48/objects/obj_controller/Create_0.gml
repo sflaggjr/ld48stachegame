@@ -7,12 +7,13 @@ enum gState {
 	gameEnd,
 	rest
 }
-//for testing purposes, we default to gState.play. Once we are closer to finalizing, we will change this
-//to gState.startUp
+
 global.gameState = gState.menu;
+//Room Transition management
 global.targetRoom = -1;
 global.targetX = -1;
 global.targetX = -1;
+//Global Player Variables
 global.hp = 5;
 global.tether = 5;
 global.uiFontSize = 2;

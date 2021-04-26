@@ -81,7 +81,6 @@ if global.gameState == gState.play {
 		
 	}
 	if global.hp <= 0 {
-		//playerState = pState.dead;
 		global.gameState = gState.gameEnd;
 		instance_destroy();
 		alarm[2] = 60;
