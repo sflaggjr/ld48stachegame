@@ -3,6 +3,7 @@
 
 if (cutsceneText) && !(instance_exists(obj_text))
 	{
+		alarm[1] = 60;
 		y += panRate;
 
 		if y > room_height {
