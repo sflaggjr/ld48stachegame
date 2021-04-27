@@ -1,3 +1,5 @@
+/// @description Bottom text box
+
 NewTextBox("Ain't much to remember about the time before..." + SPACE_CONTINUE,0);
 NewTextBox("There was a city. There were people.",0);
 NewTextBox("Then the meteor came. \nBeautiful and wonderous at first.",0);
