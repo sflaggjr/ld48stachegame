@@ -78,6 +78,7 @@
     {"id":{"name":"rm_camp3","path":"rooms/rm_camp3/rm_camp3.yy",},"order":7,},
     {"id":{"name":"obj_tetherBullet","path":"objects/obj_tetherBullet/obj_tetherBullet.yy",},"order":7,},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"order":4,},
+    {"id":{"name":"snd_repair","path":"sounds/snd_repair/snd_repair.yy",},"order":8,},
     {"id":{"name":"spr_textbox_strip4","path":"sprites/spr_textbox_strip4/spr_textbox_strip4.yy",},"order":16,},
     {"id":{"name":"obj_cameraPan","path":"objects/obj_cameraPan/obj_cameraPan.yy",},"order":14,},
     {"id":{"name":"snd_theRim","path":"sounds/snd_theRim/snd_theRim.yy",},"order":5,},

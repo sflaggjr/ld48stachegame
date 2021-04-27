@@ -86,7 +86,7 @@ if global.gameState == gState.rest {
 				button2 = 1;
 				//draw_text(mouseX, mouseY, "Button 2");	
 			}
-			draw_text(x1_b1 + xMargin, y1_b1 + yMargin, "HP");
+			draw_text(x1_b1 + xMargin, y1_b1 + yMargin, "Armor");
 			draw_text(x1_b2 + xMargin, y1_b2 + yMargin, "Tether");
 		}
 	}
