@@ -19,10 +19,10 @@ if global.gameState = gState.menu{
 				game_end();
 			}
 			//Debug button for Camp rooms
-			if button3 = 1 {
+			/*if button3 = 1 {
 				global.gameState = gState.rest;
-				room_goto(rm_camp);
-			}
+				room_goto(rm_camp3);
+			}*/
 		}	
 	}
 }
