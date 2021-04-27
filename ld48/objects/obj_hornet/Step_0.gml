@@ -16,7 +16,7 @@ if enemyState = eStates.active {
 	if canShoot {
 		instance_create_layer(x, y, "Instances", obj_enemyBullet);
 		canShoot = false;
-		alarm[1] = 30;
+		alarm[1] = 60;
 		audio_play_sound(snd_wasp, 5, false);
 	}
 	if y >= view_get_yport(view_yport[0]) {
