@@ -37,7 +37,7 @@ if (room == rm_theRim)
 
 if (room == rm_camp0)
 {
-	alarm[2] = 180;
+	alarm[2] = 60;
 }
 
 if (room == rm_camp2)
