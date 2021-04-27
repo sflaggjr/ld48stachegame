@@ -26,6 +26,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
     {"id":{"name":"obj_spiderSpawner","path":"objects/obj_spiderSpawner/obj_spiderSpawner.yy",},"order":6,},
     {"id":{"name":"rm_camp0","path":"rooms/rm_camp0/rm_camp0.yy",},"order":8,},
+    {"id":{"name":"spr_exit_sign","path":"sprites/spr_exit_sign/spr_exit_sign.yy",},"order":3,},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":17,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_level1_bg","path":"sprites/spr_level1_bg/spr_level1_bg.yy",},"order":14,},
