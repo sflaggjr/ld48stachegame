@@ -86,15 +86,19 @@ if global.gameState == gState.play {
 		y += vSpd;
 		//Game over if tether is destroyed and you're lower than the room height
 		if y > room_height {
-		global.gameState = gState.gameEnd;
-		instance_destroy();
+		y = 0;
+		global.hp = global.maxHP;
+		global.tether = global.maxHP;
+		room_restart();
 		}
 		
 	}
 	if global.hp <= 0 {
-		global.gameState = gState.gameEnd;
-		instance_destroy();
-		alarm[2] = 60;
+		//global.gameState = gState.gameEnd;
+		room_restart();
+		global.hp = global.maxHP;
+		global.tether = global.maxHP;
+		//alarm[2] = 60;
 	}
 }
 
