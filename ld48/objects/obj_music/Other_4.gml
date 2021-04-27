@@ -7,9 +7,9 @@ if (room == rm_lvl1) {
 	if !audio_is_playing(snd_level1) {
 		//Kill the volume, then start the track, then raise the volume
 		audio_play_sound(snd_level1, 1000, true);
-		audio_sound_gain(snd_level1, 1, 0000);
+		audio_sound_gain(snd_level1, .5, 0000);
 	} else {
-		audio_sound_gain(snd_level1, 1, 0000);
+		audio_sound_gain(snd_level1, .5, 0000);
 	}
 	
 } else if (room == rm_camp) {
@@ -30,9 +30,9 @@ if (room == rm_lvl1) {
 	if !audio_is_playing(snd_level1) {
 		//Kill the volume, then start the track, then raise the volume
 		audio_play_sound(snd_level1, 1000, true);
-		audio_sound_gain(snd_level1, 1, 0000);
+		audio_sound_gain(snd_level1, .5, 0000);
 	} else {
-		audio_sound_gain(snd_level1, 1, 0000);
+		audio_sound_gain(snd_level1, .5, 0000);
 	}
 		
 	
@@ -57,7 +57,7 @@ if (room == rm_lvl1) {
 	//Kill the volume, then start the track, then raise the volume
 	audio_sound_gain(snd_theRim, 0, 0);
 	audio_play_sound(snd_theRim, 1000, true);
-	audio_sound_gain(snd_theRim, 1, 0000);
+	audio_sound_gain(snd_theRim, .5, 0000);
 	
 } else if (room == rm_lvl3) {
 	//Kill the previous tracks volume
@@ -67,9 +67,9 @@ if (room == rm_lvl1) {
 	if !audio_is_playing(snd_level1) {
 		//Kill the volume, then start the track, then raise the volume
 		audio_play_sound(snd_level1, 1000, true);
-		audio_sound_gain(snd_level1, 1, 0000);
+		audio_sound_gain(snd_level1, .5, 0000);
 	} else {
-		audio_sound_gain(snd_level1, 1, 0000);
+		audio_sound_gain(snd_level1, .5, 0000);
 	}
 	
 } else if (room == rm_camp3) {
@@ -90,5 +90,5 @@ if (room == rm_lvl1) {
 	audio_sound_gain(snd_camp, 0, 0);
 	//Kill the volume, then start the track, then raise the volume	
 	audio_play_sound(snd_intro, 1000, true);
-	audio_sound_gain(snd_intro, 1, 1000);
+	audio_sound_gain(snd_intro, .5, 1000);
 }
