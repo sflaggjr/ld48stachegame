@@ -35,6 +35,11 @@ if (room == rm_theRim)
 	alarm[2] = 180;
 }
 
+if (room == rm_camp0)
+{
+	alarm[2] = 180;
+}
+
 if (room == rm_camp2)
 	{
 		NewTextBox("RANDO: Well done, buckethead. \n Those creatures can be quite nasty. \n \n [Press SPACE to Continue]", 0);
