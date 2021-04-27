@@ -12,8 +12,10 @@ if global.gameState == gState.play || global.gameState == gState.pause {
 
 if keyboard_check_pressed(vk_enter) && global.gameState == gState.intro{
 	room_goto_next();
+	if  (room == rm_camp0) {
 	global.gameState = gState.play
-}
+		}
+	}
 
 //End of Game Handling
 if global.gameState == gState.gameEnd {
