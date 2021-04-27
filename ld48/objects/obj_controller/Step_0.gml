@@ -33,7 +33,7 @@ instance_deactivate_all(true);
 instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 //update instructions UI
 if global.gameState = gState.play && firstTime = true {
-	alarm[0] = 300;
+	alarm[0] = 500;
 }
 if decay {
 	alphaDecay -= 0.01;
