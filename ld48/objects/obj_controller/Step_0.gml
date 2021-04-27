@@ -20,6 +20,8 @@ if keyboard_check_pressed(vk_enter) && global.gameState == gState.intro{
 //End of Game Handling
 if global.gameState == gState.gameEnd {
 	room_goto(rm_menu);
+	global.hp = global.maxHP;
+	global.tether = global.maxHP
 	global.gameState = gState.menu;
 }
 //deactivate any instance that isn't in the camera view
