@@ -13,17 +13,17 @@ if enemyState = eStates.primed {
 //Shoot an acid ball at player's tether.
 if instance_exists(obj_player){
 	if enemyState = eStates.active {
-		if canShoot = true {
-			instance_create_layer(x, y, "Instances", obj_tetherBullet);
-			canShoot = false;
-			alarm[1] = shotCooldown;
-			audio_play_sound(snd_spiders, 5, false);
-		}
-		//If we get close to the top of the screen, update Y to keep spider on screen
-		if obj_player.tetherState != tState.destroyed {
-			var updateY = distance_to_object(obj_player);
-			if updateY >= 100 {
-				y += 3;
+			if canShoot = true {
+				instance_create_layer(x, y, "Instances", obj_tetherBullet);
+				canShoot = false;
+				alarm[1] = shotCooldown;
+				audio_play_sound(snd_spiders, 5, false);
+			}
+			//If we get close to the top of the screen, update Y to keep spider on screen
+			if obj_player.tetherState != tState.destroyed {
+				var updateY = distance_to_object(obj_player);
+				if updateY >= 100 {
+					y += 3;
 			}
 		}
 	}
