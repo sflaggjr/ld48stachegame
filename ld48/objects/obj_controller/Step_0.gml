@@ -32,7 +32,9 @@ var _vh = camera_get_view_height(view_camera[0]);
 instance_deactivate_all(true);
 instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 //update instructions UI
-
+if global.gameState = gState.play && firstTime = true {
+	alarm[0] = 300;
+}
 if decay {
 	alphaDecay -= 0.01;
 	if alphaDecay <= 0 {

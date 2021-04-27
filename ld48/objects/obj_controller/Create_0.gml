@@ -1,4 +1,5 @@
 //Game State Machine
+randomize();
 enum gState {
 	play,
 	pause,
@@ -26,4 +27,3 @@ alphaDecay = 1
 decay = false;
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
 //set timer to decay instructions
-alarm[0] = 600;
