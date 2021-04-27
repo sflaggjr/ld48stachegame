@@ -23,7 +23,7 @@ if instance_exists(obj_player){
 			if obj_player.tetherState != tState.destroyed {
 				var updateY = distance_to_object(obj_player);
 				if updateY >= 100 {
-					y += 3;
+					y += 5;
 			}
 		}
 	}
