@@ -12,6 +12,7 @@ if (room == rm_camp)
 	NewTextBox("MYSTERIOUS FIGURE: You! How did you get down here?",0);
 	NewTextBox("OLD SCAVENGER: A skilled scavenger can make \n their way through the labyrinths.",0);
 	NewTextBox("OLD SCAVENGER: Old vets like me built these camps \nand others like it further down. \nMake sure you rest when you can.", 0);
+	NewTextBox("OLD SCAVENGER: In fact, make sure to grab some scrap \nfrom the crate behind me. Repair your \nequipment while you can.", 0);
 	NewTextBox("MYSTERIOUS FIGURE: I thought this place \nwasn't worth dying for?",0);
 	NewTextBox("OLD SCAVENGER: It's not. \nThat's why I don't plan on dying.", 0);
 	NewTextBox("MYSTERIOUS FIGURE: Sure, whatever you say, old one...",0);
