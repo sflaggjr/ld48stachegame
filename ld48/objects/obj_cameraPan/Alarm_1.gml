@@ -1,6 +1,7 @@
 /// @description Bottom text box
 show_debug_message("BOTTOM TEXT GENERATED");
 
+
 NewTextBox("OLD SCAVENGER: You really going down there? \n \n [Press SPACE to Continue]",2);
 NewTextBox("MYSTERIOUS FIGURE: ...", 0);
 NewTextBox("MYSTERIOUS FIGURE: I think so.", 0);
