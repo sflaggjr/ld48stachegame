@@ -27,4 +27,6 @@ if (room == rm_camp3)
 	NewTextBox("INTERLOPER: You are an interloper.", 0);
 	NewTextBox("INTERLOPER: You are a monster.", 0);
 	NewTextBox("INTERLOPER: Welcome home.", 0);
+	NewTextBox("THE END! \n THANK YOU FOR PLAYING THE RIM!", 0);
+	NewTextBox("The Rim - created for Ludum Dare 48 \nby Jokerbomb, systemeffect & frequency.data", 0);
 }
