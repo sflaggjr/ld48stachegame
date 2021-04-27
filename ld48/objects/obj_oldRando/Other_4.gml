@@ -12,7 +12,7 @@ if (room == rm_camp)
 	NewTextBox("MYSTERIOUS FIGURE: You! How did you get down here?",0);
 	NewTextBox("OLD SCAVENGER: A skilled scavenger can make \n their way through the labyrinths.",0);
 	NewTextBox("OLD SCAVENGER: Old vets like me built these camps \nand others like it further down. \nMake sure you rest when you can.", 0);
-	NewTextBox("OLD SCAVENGER: In fact, make sure to grab some scrap \nfrom the crate behind me. Repair your \nequipment while you can.", 0);
+	NewTextBox("OLD SCAVENGER: In fact, grab some scrap from the crate \nbehind me. You can repair your equipment.", 0);
 	NewTextBox("MYSTERIOUS FIGURE: I thought this place \nwasn't worth dying for?",0);
 	NewTextBox("OLD SCAVENGER: It's not. \nThat's why I don't plan on dying.", 0);
 	NewTextBox("MYSTERIOUS FIGURE: Sure, whatever you say, old one...",0);
@@ -71,7 +71,7 @@ if (room == rm_camp2)
 	{
 		NewTextBox("RANDO: Well done, buckethead. \n Those creatures can be quite nasty. \n \n [Press SPACE to Continue]", 0);
 		NewTextBox("EASTMAN: What are they? What happened here?",0);
-		NewTextBox("RANDO: You mean, aside from the giant space rock \nthat wiped this whole city out?", 0);
+		NewTextBox("RANDO: You mean, aside from the giant \nspace rock that wiped this whole city out?", 0);
 		NewTextBox("RANDO: Meteor has a strange way of affecting things. \nFor some, it turned them into \ngiant putrid bugs.", 0);
 		NewTextBox("RANDO: That stink is horrid! Even after all these \nyears it makes my stomach turn.", 0);
 		NewTextBox("EASTMAN: I...can't smell them in here.",0);

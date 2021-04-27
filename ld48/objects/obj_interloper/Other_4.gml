@@ -9,7 +9,7 @@ if (room == rm_camp3)
 	audio_play_sound(snd_talking, 0, false);
 	alarm[0] = string_length(str) * 2.5
 	
-	NewTextBox("MYSTERIOUS FIGURE: Someone joins us? Another interloper?",0);
+	NewTextBox("MYSTERIOUS FIGURE: Someone joins us? \nAnother interloper?",0);
 	NewTextBox("EASTMAN: Who...what are you?",0);
 	NewTextBox("INTERLOPER: I am the creation.", 0);
 	NewTextBox("EASTMAN: Creation? You mean you're just \nanother one of these monsters?",0);
@@ -22,7 +22,7 @@ if (room == rm_camp3)
 	NewTextBox("EASTMAN: Return? I've never been here before.",0);
 	NewTextBox("INTERLOPER: We have all been here before.", 0);
 	NewTextBox("INTERLOPER: 'They came from the East'", 0);
-	NewTextBox("EASTMAN: Who came from the East?! Who are they?",0);
+	NewTextBox("EASTMAN: Who came from the East?! \nWho are they?",0);
 	NewTextBox("EASTMAN: Who am I?!",0);
 	NewTextBox("INTERLOPER: You are an interloper.", 0);
 	NewTextBox("INTERLOPER: You are a monster.", 0);
