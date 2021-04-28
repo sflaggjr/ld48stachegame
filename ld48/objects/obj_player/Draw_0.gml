@@ -9,7 +9,8 @@ if GAME_STATE == PLAY {
 			draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_white, c_white);
 		}
 		if tetherState = tState.invul {
-			draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_teal, c_teal);
+			draw_line_width_color(x, y - 25, room_width / 2, 0, 8, c_purple, c_purple);
+			draw_line_width_color(x, y - 25, room_width / 2, 0, 4, c_white, c_white);
 			draw_set_color(c_white);
 			draw_text(x - sprite_get_xoffset(spr_player), y - sprite_get_yoffset(spr_player), "Tether Strength: " + string(global.tether));
 		}
