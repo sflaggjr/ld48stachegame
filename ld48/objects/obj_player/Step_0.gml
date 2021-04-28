@@ -27,16 +27,16 @@ if GAME_STATE == PLAY {
 		}
 	}
 	//shoot a bullet
-	if mouse_check_button_pressed(keyFire) {
-		instance_create_layer(x ,y,"Instances",obj_bullet);
-		audio_play_sound(snd_playerShot, 10, false);
-		firing = true;
-		//instance_create_layer(x, y,"Instances", obj_screenshake);
-	}
-	else {
-		firing = false;
-	}
-
+	if mouse_check_button(keyFire) {
+		if canShoot {
+			instance_create_layer(x ,y,"Instances",obj_bullet);
+			audio_play_sound(snd_playerShot, 10, false);
+			firing = true;
+			canShoot = false;
+			alarm[4] = shotCooldown;
+			//instance_create_layer(x, y,"Instances", obj_screenshake);
+			}
+		}
 	//tether hitbox
 	if collision_line(x + 10, y, room_width / 2, 0, obj_worm, false, true) && tetherState == tState.active {
 		global.tether--;
