@@ -1,5 +1,5 @@
 //If the game is in a play State, draw all the things!
-if global.gameState == gState.play {
+if GAME_STATE == PLAY {
 	if playerState != pState.dead {
 	draw_self();
 	}
@@ -60,6 +60,6 @@ if global.gameState == gState.play {
 	}
 }
 
-if (global.gameState == gState.rest) || (global.gameState == gState.intro) {
+if (GAME_STATE == REST) || (GAME_STATE == INTRO) {
 	draw_self();
 }

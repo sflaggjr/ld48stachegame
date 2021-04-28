@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.gameState == gState.play {
+if GAME_STATE == PLAY {
 	if keyboard_check(keyUp) && tetherState != tState.destroyed {
 			if y > 0 {
 				if !place_meeting(x, y - collisionOffset, obj_wall) {
@@ -94,7 +94,7 @@ if global.gameState == gState.play {
 		
 	}
 	if global.hp <= 0 {
-		//global.gameState = gState.gameEnd;
+		//GAME_STATE = GAME_OVER;
 		room_restart();
 		global.hp = global.maxHP;
 		global.tether = global.maxHP;
@@ -102,7 +102,7 @@ if global.gameState == gState.play {
 	}
 }
 
-if (global.gameState == gState.rest) || (global.gameState == gState.intro)
+if (GAME_STATE == REST) || (GAME_STATE == INTRO)
 	{
 		keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 		keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));

@@ -45,7 +45,6 @@ runSpeed = 5;
 //Sprite variables
 spriteRun = spr_player_run;
 spriteIdle = spr_player_stand;
-spritePlay = spr_player;
 
 localFrame = 0;
 

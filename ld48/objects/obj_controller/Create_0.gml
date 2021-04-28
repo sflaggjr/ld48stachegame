@@ -10,7 +10,7 @@ enum gState {
 	intro
 }
 
-global.gameState = gState.menu;
+GAME_STATE = MAIN_MENU;
 //Room Transition management
 global.targetRoom = -1;
 global.targetX = -1;

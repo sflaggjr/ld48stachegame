@@ -1,7 +1,7 @@
 /// @description Entity Loop
 // You can write your code in this editor
 
-if !(global.gameState = gState.pause)
+if !(GAME_STATE = PAUSE)
 {
 	depth = -bbox_bottom;
 }

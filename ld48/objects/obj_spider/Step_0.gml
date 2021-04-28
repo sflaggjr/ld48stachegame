@@ -24,7 +24,7 @@ if instance_exists(obj_player){
 				var updateY = distance_to_object(obj_player);
 				if updateY >= 100 {
 					y += 5;
-			}
+				}
 		}
 	}
 }

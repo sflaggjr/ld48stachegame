@@ -9,7 +9,7 @@ button4 = 0;
 button5 = 0;
 
 //Draw button UI for the main menu
-if global.gameState == gState.menu{
+if GAME_STATE == MAIN_MENU{
 	//button 1 X/Y
 	var button1X = 480;
 	var button1Y = 680;
@@ -58,7 +58,7 @@ if global.gameState == gState.menu{
 	//draw_text(x1_b3 + xMargin, y1_b3 + yMargin, "The Room - Oh hi Austin"); //delete this later
 }
 //Button UI for the campsite
-if global.gameState == gState.rest {
+if GAME_STATE == REST {
 	if instance_exists(obj_crate) {
 		if obj_crate.contact && obj_crate.used = false {
 			var button1X = obj_crate.x - 85;
