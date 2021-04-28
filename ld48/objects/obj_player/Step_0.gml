@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.gameState == gState.play {
+if GAME_STATE == PLAY {
 	if keyboard_check(keyUp) && tetherState != tState.destroyed {
 			if y > 0 {
 				if !place_meeting(x, y - collisionOffset, obj_wall) {
@@ -27,16 +27,16 @@ if global.gameState == gState.play {
 		}
 	}
 	//shoot a bullet
-	if mouse_check_button_pressed(keyFire) {
-		instance_create_layer(x ,y,"Instances",obj_bullet);
-		audio_play_sound(snd_playerShot, 10, false);
-		firing = true;
-		//instance_create_layer(x, y,"Instances", obj_screenshake);
-	}
-	else {
-		firing = false;
-	}
-
+	if mouse_check_button(keyFire) {
+		if canShoot {
+			instance_create_layer(x ,y,"Instances",obj_bullet);
+			audio_play_sound(snd_playerShot, 10, false);
+			firing = true;
+			canShoot = false;
+			alarm[4] = shotCooldown;
+			//instance_create_layer(x, y,"Instances", obj_screenshake);
+			}
+		}
 	//tether hitbox
 	if collision_line(x + 10, y, room_width / 2, 0, obj_worm, false, true) && tetherState == tState.active {
 		global.tether--;
@@ -94,7 +94,7 @@ if global.gameState == gState.play {
 		
 	}
 	if global.hp <= 0 {
-		//global.gameState = gState.gameEnd;
+		//GAME_STATE = GAME_OVER;
 		room_restart();
 		global.hp = global.maxHP;
 		global.tether = global.maxHP;
@@ -102,7 +102,7 @@ if global.gameState == gState.play {
 	}
 }
 
-if (global.gameState == gState.rest) || (global.gameState == gState.intro)
+if (GAME_STATE == REST) || (GAME_STATE == INTRO)
 	{
 		keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 		keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));

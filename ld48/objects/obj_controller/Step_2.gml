@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.gameState == gState.play {
+if GAME_STATE == PLAY {
 	if !instance_exists(obj_player) {
-		global.gameState = gState.gameEnd;
+		GAME_STATE = GAME_OVER;
 	}
 }
 
-if global.gameState == gState.pause{
+if GAME_STATE == PAUSE{
 	instance_deactivate_all(true);
 	if keyboard_check_pressed(ord("Q")) {
-		global.gameState = gState.gameEnd;
+		GAME_STATE = GAME_OVER;
 	}
 }
 else {
@@ -21,6 +21,6 @@ else {
 	instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 }
 
-if global.gameState == gState.intro {
+if GAME_STATE == INTRO {
 
 }

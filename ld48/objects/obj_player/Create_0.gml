@@ -41,11 +41,12 @@ collisionOffset = 10;
 iframes = 60;
 firing = false;
 runSpeed = 5;
+canShoot = true;
+shotCooldown = 10;
 
 //Sprite variables
 spriteRun = spr_player_run;
 spriteIdle = spr_player_stand;
-spritePlay = spr_player;
 
 localFrame = 0;
 

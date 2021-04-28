@@ -8,11 +8,11 @@ else {
 	mouseY = mouse_y;
 }
 //Actions for when what button is pushed on the main menu
-if global.gameState = gState.menu{
+if GAME_STATE = MAIN_MENU{
 	if buttonState == bState.hovered {
 		if mouse_check_button_pressed(mb_left) {
 			if button1 = 1 {
-				global.gameState = gState.intro;
+				GAME_STATE = INTRO;
 				room_goto_next();
 			}
 			if button2 = 1 {
@@ -20,14 +20,14 @@ if global.gameState = gState.menu{
 			}
 			//Debug button for Camp rooms
 			/*if button3 = 1 {
-				global.gameState = gState.rest;
+				GAME_STATE = REST;
 				room_goto(rm_camp3);
 			}*/
 		}	
 	}
 }
 //Actions for what button is pushed at the camp
-if global.gameState = gState.rest {
+if GAME_STATE = REST {
 		if buttonState == bState.hovered {
 			if mouse_check_button_pressed(mb_left) {
 				if button1 = 1 {

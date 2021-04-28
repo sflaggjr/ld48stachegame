@@ -87,6 +87,7 @@
     {"id":{"name":"obj_cameraPan","path":"objects/obj_cameraPan/obj_cameraPan.yy",},"order":14,},
     {"id":{"name":"snd_theRim","path":"sounds/snd_theRim/snd_theRim.yy",},"order":5,},
     {"id":{"name":"spr_hornet","path":"sprites/spr_hornet/spr_hornet.yy",},"order":7,},
+    {"id":{"name":"Script10","path":"scripts/Script10/Script10.yy",},"order":9,},
     {"id":{"name":"obj_breakWall","path":"objects/obj_breakWall/obj_breakWall.yy",},"order":1,},
     {"id":{"name":"rm_camp","path":"rooms/rm_camp/rm_camp.yy",},"order":1,},
     {"id":{"name":"snd_playerShot","path":"sounds/snd_playerShot/snd_playerShot.yy",},"order":0,},

@@ -1,28 +1,28 @@
-if global.gameState == gState.play || global.gameState == gState.pause {
+if GAME_STATE == PLAY || GAME_STATE == PAUSE {
 	if keyboard_check_pressed(vk_escape) {
-		if global.gameState == gState.play {
-		global.gameState = gState.pause;
+		if GAME_STATE == PLAY {
+		GAME_STATE = PAUSE;
 	}
-	else if global.gameState == gState.pause {
-		global.gameState = gState.play;
+	else if GAME_STATE == PAUSE {
+		GAME_STATE = PLAY;
 		}
 	}
 }	
 
 
-if keyboard_check_pressed(vk_enter) && global.gameState == gState.intro{
+if keyboard_check_pressed(vk_enter) && GAME_STATE == INTRO{
 	room_goto_next();
 	if  (room == rm_camp0) {
-	global.gameState = gState.play
+	GAME_STATE = PLAY;
 		}
 	}
 
 //End of Game Handling
-if global.gameState == gState.gameEnd {
+if GAME_STATE == GAME_OVER {
 	room_goto(rm_menu);
 	global.hp = global.maxHP;
 	global.tether = global.maxHP
-	global.gameState = gState.menu;
+	GAME_STATE = MAIN_MENU;
 }
 //deactivate any instance that isn't in the camera view
 var _vx = camera_get_view_x(view_camera[0]);
@@ -32,7 +32,7 @@ var _vh = camera_get_view_height(view_camera[0]);
 instance_deactivate_all(true);
 instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 //update instructions UI
-if global.gameState = gState.play && firstTime = true {
+if GAME_STATE = PLAY && firstTime = true {
 	alarm[0] = 500;
 }
 if decay {
