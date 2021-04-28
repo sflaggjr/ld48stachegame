@@ -24,7 +24,7 @@ if enemyState = eStates.active {
 	}
 }
 //reverse direction if we hit a wall
-if place_meeting(x + spd, y, obj_wall){
+if place_meeting(x + spd, y, obj_wall) || place_meeting(x + spd, y, obj_enemy){
 	if enemyFacing = 0 {
 		enemyFacing = 1;
 	}
