@@ -21,7 +21,7 @@ if instance_exists(obj_player){
 			}
 			//If we get close to the top of the screen, update Y to keep spider on screen
 if obj_player.tetherState != tState.destroyed {
-		y = Approach(y, obj_player.y - targetY, spd);
+		y = Approach(y, obj_player.y - scrollDistance, spd);
 		}
 	}
 }

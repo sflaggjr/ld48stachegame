@@ -6,3 +6,4 @@ chargeTime = 30;
 spawnX = x;
 canShoot = true;
 shotCooldown = 90;
+scrollDistance = floor(random(250));
