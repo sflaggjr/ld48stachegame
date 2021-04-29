@@ -14,4 +14,17 @@ function MACROS(){
 	#macro GAME_OVER gState.gameEnd
 	#macro REST gState.rest
 	#macro INTRO gState.intro
+	//Player State Macros
+	#macro ACTIVE pState.active
+	#macro DEAD pState.dead
+	#macro HIT pState.hit
+	#macro INVUL pState.invul
+	#macro DESCEND pState.descending
+	#macro ASCEND pState.ascending
+	#macro IDLE pState.idle
+	#macro LOCKED pState.locked
+	//Tether State Macros
+	#macro T_ACTIVE tState.active
+	#macro T_INVUL tState.invul
+	#macro T_DESTROYED tState.destroyed
 }

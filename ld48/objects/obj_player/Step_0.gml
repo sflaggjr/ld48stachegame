@@ -53,7 +53,7 @@ if GAME_STATE == PLAY {
 			alarm[1] = iframes;
 	}
 	//enemy bullet collision
-	if place_meeting(x, y, obj_enemyBullet) && playerState == pState.active {
+	if place_meeting(x, y, obj_enemyBullet) && playerState == ACTIVE {
 		global.hp--
 		var nearestBullet = instance_nearest(x, y, obj_enemyBullet);
 		if instance_exists(nearestBullet) {
@@ -62,7 +62,7 @@ if GAME_STATE == PLAY {
 			}
 		audio_play_sound(snd_player_hit, 5, false);
 		instance_destroy(nearestBullet);
-		playerState = pState.invul;
+		playerState = INVUL;
 		playerHit = true;
 		alarm[3] = 3;
 		alarm[0] = iframes;

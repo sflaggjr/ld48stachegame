@@ -22,7 +22,7 @@ enum pFacing {
 	right
 }
 //State Definitions
-playerState = pState.active;
+playerState = ACTIVE;
 playerFacing = pFacing.right;
 tetherState = tState.active;
 playerHit = false;

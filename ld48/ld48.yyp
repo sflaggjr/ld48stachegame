@@ -50,6 +50,7 @@
     {"id":{"name":"obj_oldRando","path":"objects/obj_oldRando/obj_oldRando.yy",},"order":0,},
     {"id":{"name":"spr_camp_bg","path":"sprites/spr_camp_bg/spr_camp_bg.yy",},"order":0,},
     {"id":{"name":"spr_tetherBullet","path":"sprites/spr_tetherBullet/spr_tetherBullet.yy",},"order":12,},
+    {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},"order":0,},
     {"id":{"name":"obj_landingPad","path":"objects/obj_landingPad/obj_landingPad.yy",},"order":2,},
     {"id":{"name":"spr_brickplant_wall","path":"sprites/spr_brickplant_wall/spr_brickplant_wall.yy",},"order":13,},
     {"id":{"name":"spr_playerUp","path":"sprites/spr_playerUp/spr_playerUp.yy",},"order":1,},
@@ -148,6 +149,7 @@
     {"folderPath":"folders/Sprites/UI.yy","order":22,"resourceVersion":"1.0","name":"UI","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Level/Meteor.yy","order":7,"resourceVersion":"1.0","name":"Meteor","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/NPCs.yy","order":23,"resourceVersion":"1.0","name":"NPCs","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Common Tools.yy","order":10,"resourceVersion":"1.0","name":"Common Tools","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

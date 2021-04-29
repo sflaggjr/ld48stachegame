@@ -1,6 +1,6 @@
 //If the game is in a play State, draw all the things!
 if GAME_STATE == PLAY {
-	if playerState != pState.dead {
+	if playerState != DEAD {
 	draw_self();
 	}
 	//Draw Tether
@@ -55,7 +55,7 @@ if GAME_STATE == PLAY {
 	if playerHit {
 		draw_circle_color(hitX, hitY, 15, c_yellow, c_orange, false);
 	}
-	if playerState = pState.invul {
+	if playerState = INVUL {
 		draw_set_color(c_red);
 		draw_text(x + sprite_get_xoffset(spr_player), y - sprite_get_yoffset(spr_player), "Armor: " + string(global.hp));
 	}

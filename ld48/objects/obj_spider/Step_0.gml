@@ -20,11 +20,8 @@ if instance_exists(obj_player){
 				audio_play_sound(snd_spiders, 5, false);
 			}
 			//If we get close to the top of the screen, update Y to keep spider on screen
-			if obj_player.tetherState != tState.destroyed {
-				var updateY = distance_to_object(obj_player);
-				if updateY >= 100 {
-					y += 5;
-				}
+if obj_player.tetherState != tState.destroyed {
+		y = Approach(y, obj_player.y - targetY, spd);
 		}
 	}
 }
