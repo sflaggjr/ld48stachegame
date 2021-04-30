@@ -12,5 +12,5 @@ enum eStates {
 	}
 //Variable Definition
 eHp = 1;
-enemyState = 0;
+enemyState = eStates.idle;
 enemyHit = false;
