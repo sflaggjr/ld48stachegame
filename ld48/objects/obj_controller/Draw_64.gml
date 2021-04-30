@@ -19,15 +19,6 @@ if GAME_STATE != GAME_OVER {
 			draw_text_ext_color(250, 90, "If you need a break, you can always hit Escape to pause.", 5, 1000, c_white, c_white, c_white, c_white, alphaDecay);
 			firstTime = false;
 		}
-		var hudX = 1024;
-		var hudY = view_get_yport(view_yport[0]);
-		var hudH = view_get_hport(view_hport[0]);
-		var hudW = view_get_wport(view_wport[0]);
-		draw_set_color(c_black);
-		draw_rectangle(hudX, hudY, hudW , hudH, false);
-		draw_set_color(c_red);
-		draw_text(1024 + 32, hudY + 64, "Armor: " + string(global.hp));
-		draw_text(1024 + 32, hudY + 128, "Tether: " + string(global.tether));
-		draw_set_color(c_white);
+
 	}
 }

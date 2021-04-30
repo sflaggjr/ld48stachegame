@@ -16,6 +16,7 @@
     {"id":{"name":"spr_camp_sign","path":"sprites/spr_camp_sign/spr_camp_sign.yy",},"order":2,},
     {"id":{"name":"obj_buttonManager","path":"objects/obj_buttonManager/obj_buttonManager.yy",},"order":2,},
     {"id":{"name":"obj_interloper","path":"objects/obj_interloper/obj_interloper.yy",},"order":1,},
+    {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},"order":15,},
     {"id":{"name":"spr_oldRando","path":"sprites/spr_oldRando/spr_oldRando.yy",},"order":0,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":2,},
     {"id":{"name":"Script6","path":"scripts/Script6/Script6.yy",},"order":0,},

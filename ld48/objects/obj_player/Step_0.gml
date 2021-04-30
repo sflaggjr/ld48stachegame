@@ -1,31 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
 if GAME_STATE == PLAY {
-	if keyboard_check(keyUp) && tetherState != tState.destroyed {
-			if y > 0 {
-				if !place_meeting(x, y - collisionOffset, obj_wall) {
-					y -= vSpd;
-				}
+	keyUp = keyboard_check(ord("W"));
+	keyDown = keyboard_check(ord("S"));
+	keyLeft = keyboard_check(ord("A"));
+	keyRight = keyboard_check(ord("D"));
+	keyFire = mb_left;
+	
+	var moveH = keyRight - keyLeft;
+	var moveV = keyDown - keyUp;
+	hSpd = moveH * spd;
+	vSpd = moveV * tSpd;
+	
+	if place_meeting(x + hSpd, y, obj_wall) {
+		while !place_meeting(x + sign(hSpd), y, obj_wall) {
+			x = x + sign(hSpd);
 		}
+		hSpd = 0;
 	}
-	if keyboard_check(keyDown) && tetherState != tState.destroyed {
-		if y <= room_height + collisionOffset {
-			if !place_meeting(x, y + collisionOffset, obj_wall) {
-				y += vSpd;
-			}
+	x = x + hSpd;
+	
+	if place_meeting(x, y + vSpd, obj_wall) {
+		while !place_meeting(x, y + sign(vSpd), obj_wall) {
+			y = y + sign(vSpd);
 		}
+		vSpd = 0;
 	}
-	//stop movement if you collide with a wall
-	if keyboard_check(keyRight) {
-		if !place_meeting(x + collisionOffset, y, obj_wall) {
-			x += hSpd;
-		}
-	}
-	if keyboard_check(keyLeft) {
-		if !place_meeting(x - collisionOffset, y, obj_wall) {
-			x -= hSpd;
-		}
-	}
+	y = y + vSpd;
+
 	//shoot a bullet
 	if mouse_check_button(keyFire) {
 		if canShoot {
