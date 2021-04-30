@@ -1,3 +1,4 @@
+///@description Draw the menus and helpers
 //Draw Main Menu if in MAIN_MENU
 if GAME_STATE != GAME_OVER {
 	if GAME_STATE = MAIN_MENU {
@@ -7,10 +8,10 @@ if GAME_STATE != GAME_OVER {
 
 	//Draw Paused if game is paused
 	draw_set_color(c_white);
-	if GAME_STATE = PAUSE {
-		draw_text(x + (room_width / 2), y, "Paused");
-		draw_text(x + (room_width / 2 - 100), y + 20, "Press Q to return to the Main Menu");
-	}
+//	if GAME_STATE = PAUSE {
+//		draw_text(x + (room_width / 2), y, "Paused");
+//		draw_text(x + (room_width / 2 - 100), y + 20, "Press Q to return to the Main Menu");
+//	}
 
 	if GAME_STATE = PLAY {
 		if decay >= 0 {
