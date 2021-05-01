@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-if enemyState == eStates.active {
+
 	if instance_exists(obj_player) {
 	if y >= obj_player.y  {
 		y -= eSpd;
@@ -24,4 +24,3 @@ if enemyState == eStates.active {
 			}
 		}
 	}
-}

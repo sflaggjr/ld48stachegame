@@ -14,3 +14,4 @@ enum eStates {
 eHp = 1;
 enemyState = eStates.idle;
 enemyHit = false;
+instance_deactivate_layer("Enemy_Layer");
