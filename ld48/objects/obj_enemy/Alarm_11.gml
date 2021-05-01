@@ -1,3 +1,3 @@
-/// @description Set enemy to Active
+/// @description Insert description here
 // You can write your code in this editor
 enemyState = eStates.active;

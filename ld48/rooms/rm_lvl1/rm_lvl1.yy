@@ -138,7 +138,10 @@
 
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wallcrawler","path":"objects/obj_wallcrawler/obj_wallcrawler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":1408.0,"resourceVersion":"1.0","name":"inst_639EFBAB","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wallcrawler","path":"objects/obj_wallcrawler/obj_wallcrawler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":864.0,"y":2560.0,"resourceVersion":"1.0","name":"inst_704599FD","tags":[],"resourceType":"GMRInstance",},
+<<<<<<< HEAD
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,"resourceVersion":"1.0","name":"inst_5B5A58C7","tags":[],"resourceType":"GMRInstance",},
+=======
+>>>>>>> parent of f5d2a10 (Enemy AI changes)
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"spr_level1_bg","path":"sprites/spr_level1_bg/spr_level1_bg.yy",},"colour":4278218495,"x":108,"y":0,"htiled":false,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
     {"spriteId":{"name":"spr_level1_bg2","path":"sprites/spr_level1_bg2/spr_level1_bg2.yy",},"colour":4280383231,"x":408,"y":0,"htiled":false,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Backgrounds_1","tags":[],"resourceType":"GMRBackgroundLayer",},
@@ -169,7 +172,10 @@
     {"name":"inst_24885308","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_639EFBAB","path":"rooms/rm_lvl1/rm_lvl1.yy",},
     {"name":"inst_704599FD","path":"rooms/rm_lvl1/rm_lvl1.yy",},
+<<<<<<< HEAD
     {"name":"inst_5B5A58C7","path":"rooms/rm_lvl1/rm_lvl1.yy",},
+=======
+>>>>>>> parent of f5d2a10 (Enemy AI changes)
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
