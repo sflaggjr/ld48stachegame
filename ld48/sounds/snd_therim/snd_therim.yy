@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audiogroup_music",
+    "path": "audiogroups/audiogroup_music",
   },
   "soundFile": "snd_theRim.wav",
   "duration": 113.782776,

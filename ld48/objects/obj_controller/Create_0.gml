@@ -19,10 +19,10 @@ global.targetX = -1;
 global.hp = 5;
 global.tether = 5;
 global.uiFontSize = 2;
-
 global.textSpeed = 0.75;
 global.maxHP = 5;
 firstTime = true;
+global.prevState = 0
 alphaDecay = 1
 decay = false;
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);

@@ -7,8 +7,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "audiogroup_music",
+    "path": "audiogroups/audiogroup_music",
   },
   "soundFile": "snd_camp.wav",
   "duration": 236.61557,
