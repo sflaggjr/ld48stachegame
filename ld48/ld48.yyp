@@ -99,7 +99,6 @@
     {"id":{"name":"ExitGame","path":"scripts/ExitGame/ExitGame.yy",},"order":2,},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
     {"id":{"name":"spr_camp_floor","path":"sprites/spr_camp_floor/spr_camp_floor.yy",},"order":1,},
-    {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},"order":2,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -118,7 +117,7 @@
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_theRim","path":"rooms/rm_theRim/rm_theRim.yy",},},
     {"roomId":{"name":"rm_camp0","path":"rooms/rm_camp0/rm_camp0.yy",},},
-    {"roomId":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
+    {"roomId":{"name":"","path":"",},},
     {"roomId":{"name":"rm_camp","path":"rooms/rm_camp/rm_camp.yy",},},
     {"roomId":{"name":"rm_lvl2","path":"rooms/rm_lvl2/rm_lvl2.yy",},},
     {"roomId":{"name":"rm_camp2","path":"rooms/rm_camp2/rm_camp2.yy",},},
