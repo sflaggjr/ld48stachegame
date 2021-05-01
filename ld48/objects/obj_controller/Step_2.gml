@@ -8,6 +8,7 @@ if GAME_STATE == PLAY {
 
 if GAME_STATE == PAUSE{
 	//instance_deactivate_all(true);
+
 	if keyboard_check_pressed(ord("Q")) {
 		GAME_STATE = GAME_OVER;
 	}
@@ -20,7 +21,6 @@ else {
 	//instance_deactivate_all(true);
 	instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 }
-
 if GAME_STATE == INTRO {
 
 }
