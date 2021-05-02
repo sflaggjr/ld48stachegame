@@ -9,6 +9,7 @@
     {"id":{"name":"spr_spider","path":"sprites/spr_spider/spr_spider.yy",},"order":9,},
     {"id":{"name":"PlayerAnimateSprite","path":"scripts/PlayerAnimateSprite/PlayerAnimateSprite.yy",},"order":6,},
     {"id":{"name":"spr_therim_bg","path":"sprites/spr_therim_bg/spr_therim_bg.yy",},"order":4,},
+    {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},"order":13,},
     {"id":{"name":"snd_camp","path":"sounds/snd_camp/snd_camp.yy",},"order":3,},
     {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},"order":2,},
     {"id":{"name":"obj_hornet","path":"objects/obj_hornet/obj_hornet.yy",},"order":3,},

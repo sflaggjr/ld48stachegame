@@ -7,18 +7,20 @@
 //      hp = Approach(hp, max_hp, heal_amount);
 //      x = Approach(x, target_x, move_speed);
 //      y = Approach(y, target_y, move_speed);
-function Approach(argument0, argument1, argument2) { 
-	if (argument0 < argument1)
-	{
-	    argument0 += argument2;
-	    if (argument0 > argument1)
-	        return argument1;
-	}
-	else
-	{
-	    argument0 -= argument2;
-	    if (argument0 < argument1)
-	        return argument1;
-	}
-	return argument0;
+ 
+function Approach(argument0, argument1, argument2){
+if (argument0 < argument1)
+{
+    argument0 += argument2;
+    if (argument0 > argument1)
+        return argument1;
+}
+else
+{
+    argument0 -= argument2;
+    if (argument0 < argument1)
+        return argument1;
+}
+return argument0;
+
 }
