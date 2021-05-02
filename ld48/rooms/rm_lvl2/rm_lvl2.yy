@@ -185,6 +185,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wallcrawler","path":"objects/obj_wallcrawler/obj_wallcrawler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":2336.0,"resourceVersion":"1.0","name":"inst_369CBE30","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wallcrawler","path":"objects/obj_wallcrawler/obj_wallcrawler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":3008.0,"resourceVersion":"1.0","name":"inst_7A0BD5A3","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_wallcrawler","path":"objects/obj_wallcrawler/obj_wallcrawler.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":1632.0,"resourceVersion":"1.0","name":"inst_60684519","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":96.0,"resourceVersion":"1.0","name":"inst_36455A95","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemy_Layer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":160.0,"resourceVersion":"1.0","name":"inst_29B3C8AB","tags":[],"resourceType":"GMRInstance",},
@@ -233,6 +234,7 @@
     {"name":"inst_60684519","path":"rooms/rm_lvl2/rm_lvl2.yy",},
     {"name":"inst_38B38E01","path":"rooms/rm_lvl2/rm_lvl2.yy",},
     {"name":"inst_542BEB51","path":"rooms/rm_lvl2/rm_lvl2.yy",},
+    {"name":"inst_36455A95","path":"rooms/rm_lvl2/rm_lvl2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
