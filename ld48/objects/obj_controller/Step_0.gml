@@ -45,3 +45,14 @@ if GAME_STATE == PLAY {
 	var _vh = camera_get_view_height(view_camera[0]);
 	instance_activate_region(_vx - 64, _vy - 64, _vw + 128, _vh + 128, true);
 }
+
+
+// TESTING PARALLAX BACKGROUND
+
+var nearBGLayer = layer_get_id("Background_near");
+var midBGLayer = layer_get_id("Background_mid");
+var farBGLayer = layer_get_id("Background_far");
+
+layer_x(nearBGLayer, lerp(0, camera_get_view_x(view_camera[0]), 0.5)  );
+layer_x(midBGLayer, lerp(0, camera_get_view_x(view_camera[0]), 0.7)  );
+layer_x(farBGLayer, lerp(0, camera_get_view_x(view_camera[0]), 0.9)  );
