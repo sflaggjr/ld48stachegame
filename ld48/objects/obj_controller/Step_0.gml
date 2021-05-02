@@ -5,6 +5,7 @@ if keyboard_check_pressed(vk_escape) {
 	if GAME_STATE != PAUSE {
 		global.prevState = GAME_STATE;	
 		GAME_STATE = PAUSE;
+		instance_deactivate_layer("Enemy_Layer");
 
   } else if GAME_STATE == PAUSE {
 		GAME_STATE = global.prevState;
